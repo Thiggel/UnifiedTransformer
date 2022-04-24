@@ -1,0 +1,1 @@
+from .MnistDataModule import MnistDataModule
