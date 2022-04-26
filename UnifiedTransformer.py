@@ -1,5 +1,4 @@
-from torch import rand, stack, vstack, ones, zeros, cat, Tensor, device, cuda
-from torch.optim.lr_scheduler import CosineAnnealingLR
+from torch import rand, stack, vstack, ones, cat, Tensor, device, cuda
 from torch.nn import Sequential, \
     Linear, \
     Softmax, \
@@ -52,7 +51,6 @@ class UnifiedTransformer(ExtendedModule):
         )
 
         self.optimizer = Adam(self.parameters(), lr=learning_rate)
-        self.scheduler = CosineAnnealingLR(self.optimizer, 60, verbose=True)
         self.loss_fn = BCELoss() if output_dim == 1 else CrossEntropyLoss()
 
         self.accuracy = Accuracy()
@@ -89,17 +87,7 @@ class UnifiedTransformer(ExtendedModule):
 
         return output
 
-    def training_step(self, batch: Tensor, _: int) -> Tensor:
-        (images, numbers), targets = batch
-
-        images, numbers, targets = images.to(self.dev), numbers.to(self.dev), targets.to(self.dev)
-
-        y_hat = self(images, numbers)
-        loss = self.loss_fn(y_hat, targets.float())
-
-        return loss
-
-    def validation_step(self, batch: Tensor, _: int) -> Tuple[Tensor, Tensor]:
+    def step(self, batch: Tensor, _: int) -> Tuple[Tensor, Tensor]:
         (images, numbers), targets = batch
 
         images, numbers, targets = images.to(self.dev), numbers.to(self.dev), targets.to(self.dev)
@@ -110,5 +98,13 @@ class UnifiedTransformer(ExtendedModule):
 
         return loss, acc
 
-    def test_step(self, batch: Tensor, batch_idx: int) -> Tuple[Tensor, Tensor]:
-        return self.validation_step(batch, batch_idx)
+    def training_step(self, batch: Tensor, _: int) -> Tensor:
+        loss, _ = self.step(batch, _)
+
+        return loss
+
+    def validation_step(self, batch: Tensor, _: int) -> Tuple[Tensor, Tensor]:
+        return self.step(batch, _)
+
+    def test_step(self, batch: Tensor, _: int) -> Tuple[Tensor, Tensor]:
+        return self.step(batch, _)

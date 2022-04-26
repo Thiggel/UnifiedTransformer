@@ -1,16 +1,11 @@
-from numpy.random import seed
-from torch import manual_seed, device, cuda
+from torch import device, cuda
 from json import dumps
 from argparse import ArgumentParser
-from optuna import Trial, create_study
+from optuna import Trial, create_study, Study
 
 from UnifiedTransformer import UnifiedTransformer
 from Trainer import Trainer
 from Dataset import MnistDataModule
-
-
-seed(0)
-manual_seed(0)
 
 
 def objective(trial: Trial) -> float:
@@ -67,8 +62,10 @@ def objective(trial: Trial) -> float:
     return test_loss
 
 
+def print_best_callback(st: Study, _) -> None:
+    print(f"Best value: {st.best_value}, Best params: {st.best_trial.params}")
+
+
 if __name__ == '__main__':
     study = create_study(direction='maximize')
-    study.optimize(objective, n_trials=100)
-
-    print("Best Parameters: ", study.best_params)
+    study.optimize(objective, n_trials=100, callbacks=[print_best_callback])

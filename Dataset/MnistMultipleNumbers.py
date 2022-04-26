@@ -69,10 +69,9 @@ class MnistTrueFalseMultipleNumbers(Dataset):
         image, numbers = self.mnist[index]
         target = 1
 
-        for index in range(len(numbers)):
-            if randint(0, 1) == 0:
-                numbers[index] = randint(0, 9)
-                target = 0
+        if randint(0, 1) == 0:
+            numbers[randint(0, len(numbers) - 1)] = randint(0, 9)
+            target = 0
 
         return (image, numbers), target
 

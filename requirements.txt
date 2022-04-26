@@ -1,4 +1,7 @@
+torch
 isqrt
 torchmetrics
 optuna
 alive_progress
+numpy
+torchvision

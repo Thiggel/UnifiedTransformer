@@ -1,5 +1,3 @@
-import math
-
 from numpy import sin, cos
 import torch
 from torch import Tensor, ones, device, cuda
