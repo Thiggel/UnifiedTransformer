@@ -1,3 +1,4 @@
 isqrt
 torchmetrics
 optuna
+alive_progress

@@ -20,6 +20,8 @@ class Trainer:
 
         self.n_epochs = n_epochs
 
+        self.checkpoint_filename = checkpoint_filename
+
         self.early_stopping = EarlyStopping(patience=5, verbose=True, path=checkpoint_filename)
 
     def fit(self) -> None:
@@ -80,7 +82,7 @@ class Trainer:
         print(f"Validation accuracy: {test_accuracy * 100:.2f}%\n\n")
 
     def test(self) -> float:
-        self.model.load_state_dict(load('checkpoint.pt'))
+        self.model.load_state_dict(load(self.checkpoint_filename))
 
         print("\n\nTesting:")
 

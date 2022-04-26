@@ -70,3 +70,5 @@ def objective(trial: Trial) -> float:
 if __name__ == '__main__':
     study = create_study(direction='maximize')
     study.optimize(objective, n_trials=100)
+
+    print("Best Parameters: ", study.best_params)
