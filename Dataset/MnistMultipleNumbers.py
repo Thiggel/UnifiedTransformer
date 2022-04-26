@@ -65,12 +65,23 @@ class MnistTrueFalseMultipleNumbers(Dataset):
             num_digits_per_picture=num_digits_per_picture
         )
 
+    @staticmethod
+    def randomize_number(num: int) -> int:
+        return (num + randint(0, 9)) % 10
+
     def __getitem__(self, index: int) -> Tuple[Tuple[Tensor, Tensor], int]:
         image, numbers = self.mnist[index]
         target = 1
 
         if randint(0, 1) == 0:
-            numbers[randint(0, len(numbers) - 1)] = randint(0, 9)
+            randIdx = randint(0, len(numbers) - 1)
+            numbers[randIdx] = self.randomize_number(numbers[randIdx])
+
+            # all other numbers have 1/4 chance of also being wrong
+            for idx in range(len(numbers)):
+                if idx != randIdx and randint(0, 3) == 0:
+                    numbers[idx] = self.randomize_number(numbers[idx])
+
             target = 0
 
         return (image, numbers), target
