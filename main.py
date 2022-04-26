@@ -1,7 +1,7 @@
 from torch import device, cuda
 from json import dumps
 from argparse import ArgumentParser
-from optuna import Trial, create_study
+from optuna import Trial, create_study, Study
 
 from UnifiedTransformer import UnifiedTransformer
 from Trainer import Trainer
@@ -18,7 +18,7 @@ def objective(trial: Trial) -> float:
     CONV_LAYERS = 0 if arguments.image_embedding != 'convolutional' else trial.suggest_int('conv_layers', 1, 5)
     PATCH_SIZE = (4, 4) if arguments.image_embedding != 'convolutional' else (28, 28)
     DROPOUT = trial.suggest_float('dropout', 0.1, 0.4)
-    NUM_ENCODER_LAYERS = trial.suggest_int('num_encoder_layers', 1, 6)
+    NUM_ENCODER_LAYERS = 1#trial.suggest_int('num_encoder_layers', 1, 6)
 
     hyperparams = {
         'lr': LR,
@@ -62,6 +62,10 @@ def objective(trial: Trial) -> float:
     return test_loss
 
 
+def print_best_callback(st: Study, _) -> None:
+    print(f"Best value: {st.best_value}, Best params: {st.best_trial.params}")
+
+
 if __name__ == '__main__':
     study = create_study(direction='maximize')
-    study.optimize(objective, n_trials=100)
+    study.optimize(objective, n_trials=100, callbacks=[print_best_callback])
