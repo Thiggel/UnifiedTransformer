@@ -1,5 +1,4 @@
-from numpy.random import seed
-from torch import manual_seed, device, cuda
+from torch import device, cuda
 from json import dumps
 from argparse import ArgumentParser
 from optuna import Trial, create_study
@@ -7,10 +6,6 @@ from optuna import Trial, create_study
 from UnifiedTransformer import UnifiedTransformer
 from Trainer import Trainer
 from Dataset import MnistDataModule
-
-
-seed(0)
-manual_seed(0)
 
 
 def objective(trial: Trial) -> float:

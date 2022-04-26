@@ -22,9 +22,9 @@ class MultiHeadAttention(Module):
         self.dev = device("cuda:0" if cuda.is_available() else "cpu")
 
     def forward(self, sequences, mask: Tensor = None):
-        # Sequences has shape (N, seq_length, token_dim)
-        # We go into shape    (N, seq_length, n_heads, token_dim / n_heads)
-        # And come back to    (N, seq_length, item_dim)  (through concatenation)
+        # (N, seq_length, token_dim)
+        # --> (N, seq_length, n_heads, token_dim / n_heads)
+        # --> (N, seq_length, item_dim)  (through concatenation)
         result = []
         for sequence in sequences:
             seq_result = []

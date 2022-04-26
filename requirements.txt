@@ -1,3 +1,6 @@
+torch
 isqrt
 torchmetrics
 optuna
+numpy
+torchvision

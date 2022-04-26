@@ -1,4 +1,4 @@
-from torch import load, no_grad, cuda
+from torch import load, no_grad
 from torch.utils.data import DataLoader
 from typing import Tuple
 from alive_progress import alive_bar
@@ -15,20 +15,23 @@ class Trainer:
             n_epochs: int = 5,
             checkpoint_filename: str = 'checkpoint.pt'
     ) -> None:
+        self.checkpoint_filename = checkpoint_filename
         self.model = model
         self.data_module = data_module
 
         self.n_epochs = n_epochs
 
-        self.early_stopping = EarlyStopping(patience=5, verbose=True, path=checkpoint_filename)
+        self.early_stopping = EarlyStopping(patience=3, verbose=True, path=checkpoint_filename)
 
     def fit(self) -> None:
+        train_len = len(self.data_module.train_dataloader())
+
         for epoch in range(self.n_epochs):
             train_loss = 0.0
 
             print(f"Epoch {epoch + 1}/{self.n_epochs} | ", end="")
 
-            with alive_bar(len(self.data_module.train_dataloader())) as bar:
+            with alive_bar(train_len) as bar:
                 for batch_idx, batch in enumerate(self.data_module.train_dataloader()):
                     loss = self.model.training_step(batch, batch_idx)
                     train_loss += loss.item()
@@ -39,18 +42,15 @@ class Trainer:
 
                     bar()
 
-            print(f"Loss: {train_loss:.2f}")
+            train_loss /= train_len
 
-            if cuda.is_available():
-                cuda.memory_summary(device=None, abbreviated=False)
+            print(f"Loss: {train_loss:.2f}")
 
             self.validate()
 
             if self.early_stopping.early_stop:
                 print("Early stopping")
                 break
-
-            self.model.scheduler.step()
 
     def test_validate(self, dataloader: DataLoader) -> Tuple[float, float]:
         test_accuracy = 0.0
@@ -65,22 +65,23 @@ class Trainer:
 
                     bar()
 
+        test_loss /= len(dataloader)
         test_accuracy /= len(dataloader)
 
         return test_loss, test_accuracy
 
     def validate(self) -> None:
-        test_loss, test_accuracy = self.test_validate(self.data_module.val_dataloader())
+        val_loss, val_accuracy = self.test_validate(self.data_module.val_dataloader())
 
         print("\n\nValidating:")
 
-        self.early_stopping(test_loss, self.model)
+        self.early_stopping(val_loss, self.model)
 
-        print(f"Validation loss: {test_loss:.2f}")
-        print(f"Validation accuracy: {test_accuracy * 100:.2f}%\n\n")
+        print(f"Validation loss: {val_loss:.2f}")
+        print(f"Validation accuracy: {val_accuracy * 100:.2f}%\n\n")
 
     def test(self) -> float:
-        self.model.load_state_dict(load('checkpoint.pt'))
+        self.model.load_state_dict(load(self.checkpoint_filename))
 
         print("\n\nTesting:")
 
