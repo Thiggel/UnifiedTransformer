@@ -21,6 +21,8 @@ class MultiHeadAttention(Module):
 
         self.dev = device("cuda:0" if cuda.is_available() else "cpu")
 
+        self.attention_buffer = None
+
     def forward(self, sequences, mask: Tensor = None):
         # (N, seq_length, token_dim)
         # --> (N, seq_length, n_heads, token_dim / n_heads)
@@ -42,6 +44,10 @@ class MultiHeadAttention(Module):
                     scores = scores.masked_fill(mask.eq(0), -1e9)
 
                 attention = self.softmax(scores)
+
+                # save for creating attention maps
+                self.attention_buffer = attention
+
                 seq_result.append(attention @ v)
             result.append(hstack(seq_result))
         return cat([unsqueeze(r, dim=0) for r in result])

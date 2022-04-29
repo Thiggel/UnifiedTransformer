@@ -10,6 +10,8 @@ from torch.nn import Sequential, \
 from torch.optim import Adam
 from typing import Tuple
 from torchmetrics import Accuracy
+from torchvision.transforms import ToPILImage
+from PIL import ImageFont, ImageDraw, Image
 
 from Utilities import ExtendedModule
 from Transformer import PatchEmbedding, PositionalEncoding, Encoder
@@ -28,9 +30,12 @@ class UnifiedTransformer(ExtendedModule):
             output_dim: int = 1,
             learning_rate: float = 1e-3,
             depth: int = 1,
-            dropout: float = 0.1
+            dropout: float = 0.1,
+            show_attention_maps: bool = False
     ):
         super(UnifiedTransformer, self).__init__()
+
+        self.show_attention_maps = show_attention_maps
 
         self.output_dim = output_dim
 
@@ -63,6 +68,30 @@ class UnifiedTransformer(ExtendedModule):
 
         return (tensor == 0).byte()
 
+    def create_attention_maps(self, images, text):
+        if not self.show_attention_maps:
+            return
+
+        transform = ToPILImage()
+
+        image = transform(images[0])
+        text = text[0]
+
+        img = Image.new('RGB', (512, 512), color=(255, 255, 255))
+        draw = ImageDraw.Draw(img)
+
+        img.paste(image.resize((400, 400)), (56, 20))
+
+        font = ImageFont.truetype('/Library/Fonts/Arial.ttf', 20)
+        draw.text((150, 470), '          '.join([str(int(num)) for num in text.tolist()]), font=font, fill=(0, 0, 0))
+
+        img.save('attention-map.jpg')
+
+        exit()
+
+        for layer in self.encoder.layers:
+            print(layer.attention.attention_buffer.shape)
+
     def forward(self, images, text):
         images_embedded = self.patch_embedding(images)
 
@@ -77,6 +106,8 @@ class UnifiedTransformer(ExtendedModule):
         positionally_encoded = self.positional_encoding(tokens)
 
         encoded = self.encoder(positionally_encoded)
+
+        self.create_attention_maps(images, text)
 
         final_class_tokens = encoded[:, 0]
 
