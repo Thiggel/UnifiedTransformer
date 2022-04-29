@@ -67,5 +67,5 @@ def print_best_callback(st: Study, _) -> None:
 
 
 if __name__ == '__main__':
-    study = create_study(direction='maximize')
+    study = create_study(direction='minimize')
     study.optimize(objective, n_trials=100, callbacks=[print_best_callback])
