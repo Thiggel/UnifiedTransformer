@@ -30,15 +30,13 @@ class MnistMultipleNumbers(Dataset):
         images: List[Union[Tensor, None]] = [None] * self.depth
         targets = zeros((self.num_digits_per_picture,))
 
-        idx = 0
         for row_idx in range(self.depth):
             current_row: List[Union[Tensor, None]] = [None] * self.depth
             for col_idx in range(self.depth):
                 image, target = self.mnist[randint(0, len(self.mnist) - 1)]
 
                 current_row[col_idx] = image
-                targets[idx] = target
-                idx += 1
+                targets[row_idx * col_idx] = target
 
             images[row_idx] = cat(tuple(current_row), dim=2)
 
