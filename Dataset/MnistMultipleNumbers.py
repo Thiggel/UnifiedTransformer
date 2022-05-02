@@ -36,7 +36,7 @@ class MnistMultipleNumbers(Dataset):
                 image, target = self.mnist[randint(0, len(self.mnist) - 1)]
 
                 current_row[col_idx] = image
-                targets[row_idx * col_idx] = target
+                targets[row_idx * self.depth + col_idx] = target
 
             images[row_idx] = cat(tuple(current_row), dim=2)
 
@@ -74,15 +74,13 @@ class MnistTrueFalseMultipleNumbers(Dataset):
         target = 1
 
         if randint(0, 1) == 0:
-            randIdx = randint(0, len(numbers) - 1)
-            numbers[randIdx] = self.randomize_number(numbers[randIdx])
-
-            # all other numbers have 1/4 chance of also being wrong
+            newNumbers = numbers.detach().clone()
             for idx in range(len(numbers)):
-                if idx != randIdx and randint(0, 3) == 0:
-                    numbers[idx] = self.randomize_number(numbers[idx])
+                while newNumbers[idx] in numbers:
+                    newNumbers[idx] = self.randomize_number(numbers[idx])
 
             target = 0
+            numbers = newNumbers
 
         return (image, numbers), target
 
