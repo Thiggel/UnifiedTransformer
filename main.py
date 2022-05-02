@@ -17,8 +17,8 @@ def objective(trial: Trial) -> float:
     LR = trial.suggest_float('learning_rate', 1e-4, 1e-2)
     CONV_LAYERS = 0 if arguments.image_embedding != 'convolutional' else trial.suggest_int('conv_layers', 1, 5)
     PATCH_SIZE = (4, 4) if arguments.image_embedding != 'convolutional' else (28, 28)
-    DROPOUT = 0.1#trial.suggest_float('dropout', 0.1, 0.4)
-    NUM_ENCODER_LAYERS = 1#trial.suggest_int('num_encoder_layers', 1, 6)
+    DROPOUT = trial.suggest_float('dropout', 0.1, 0.4)
+    NUM_ENCODER_LAYERS = trial.suggest_int('num_encoder_layers', 1, 6)
 
     hyperparams = {
         'lr': LR,
@@ -57,9 +57,9 @@ def objective(trial: Trial) -> float:
 
     trainer.fit()
 
-    test_loss = trainer.test()
+    _, test_accuracy = trainer.test()
 
-    return test_loss
+    return test_accuracy
 
 
 def print_best_callback(st: Study, _) -> None:
