@@ -14,11 +14,11 @@ def objective(trial: Trial) -> float:
     arguments = parser.parse_args()
 
     MAX_EPOCHS = 50
-    LR = 0.01#trial.suggest_float('learning_rate', 1e-4, 1e-2)
+    LR = trial.suggest_float('learning_rate', 1e-4, 1e-2)
     CONV_LAYERS = 0 if arguments.image_embedding != 'convolutional' else trial.suggest_int('conv_layers', 1, 5)
     PATCH_SIZE = (4, 4) if arguments.image_embedding != 'convolutional' else (28, 28)
-    DROPOUT = 0.1#trial.suggest_float('dropout', 0.1, 0.4)
-    NUM_ENCODER_LAYERS = 1#trial.suggest_int('num_encoder_layers', 1, 6)
+    DROPOUT = trial.suggest_float('dropout', 0.1, 0.4)
+    NUM_ENCODER_LAYERS = trial.suggest_int('num_encoder_layers', 1, 6)
 
     hyperparams = {
         'lr': LR,
