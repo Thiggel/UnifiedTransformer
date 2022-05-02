@@ -57,9 +57,9 @@ def objective(trial: Trial) -> float:
 
     trainer.fit()
 
-    test_loss = trainer.test()
+    _, test_accuracy = trainer.test()
 
-    return test_loss
+    return test_accuracy
 
 
 def print_best_callback(st: Study, _) -> None:

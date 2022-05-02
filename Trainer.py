@@ -90,4 +90,4 @@ class Trainer:
         print(f"Test loss: {test_loss:.2f}")
         print(f"Test accuracy: {test_accuracy * 100:.2f}%\n\n")
 
-        return test_loss
+        return test_loss, test_accuracy
