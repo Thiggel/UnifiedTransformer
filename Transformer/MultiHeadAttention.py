@@ -27,9 +27,11 @@ class MultiHeadAttention(Module):
         # (N, seq_length, token_dim)
         # --> (N, seq_length, n_heads, token_dim / n_heads)
         # --> (N, seq_length, item_dim)  (through concatenation)
+        self.attention_buffer = []
         result = []
         for sequence in sequences:
             seq_result = []
+            seq_att_buffer = []
             for head in range(self.n_heads):
                 q_mapping = self.q_mappings[head].to(self.dev)
                 k_mapping = self.k_mappings[head].to(self.dev)
@@ -45,9 +47,11 @@ class MultiHeadAttention(Module):
 
                 attention = self.softmax(scores)
 
-                # save for creating attention maps
-                self.attention_buffer = attention
+                seq_att_buffer.append(attention.unsqueeze(0))
 
                 seq_result.append(attention @ v)
+
+            self.attention_buffer.append(cat(seq_att_buffer, dim=0).unsqueeze(0))
             result.append(hstack(seq_result))
+        self.attention_buffer = cat(self.attention_buffer, dim=0)
         return cat([unsqueeze(r, dim=0) for r in result])
