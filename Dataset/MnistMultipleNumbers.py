@@ -1,10 +1,12 @@
 from math import sqrt
 from isqrt import isqrt
 from torch.utils.data import Dataset
-from torch import cat, Tensor, zeros
+from torch import cat, Tensor, zeros, tensor
 from typing import Callable, Optional, List, Union, Tuple
 from torchvision.datasets.mnist import MNIST
+from torchvision.datasets import FashionMNIST
 from random import randint
+from torch.nn.functional import one_hot
 
 
 class MnistMultipleNumbers(Dataset):
@@ -14,7 +16,8 @@ class MnistMultipleNumbers(Dataset):
             train: bool = True,
             download: bool = True,
             transform: Optional[Callable] = None,
-            num_digits_per_picture: int = 4
+            num_digits_per_picture: int = 4,
+            fashion_mnist: bool = False
     ) -> None:
         super().__init__()
 
@@ -24,7 +27,9 @@ class MnistMultipleNumbers(Dataset):
         self.num_digits_per_picture = num_digits_per_picture
         self.depth = int(sqrt(self.num_digits_per_picture))
 
-        self.mnist = MNIST(root=root, train=train, download=download, transform=transform)
+        dataset_type = MNIST if not fashion_mnist else FashionMNIST
+
+        self.mnist = dataset_type(root=root, train=train, download=download, transform=transform)
 
     def __getitem__(self, index: int) -> Tuple[Tensor, Tensor]:
         images: List[Union[Tensor, None]] = [None] * self.depth
@@ -53,7 +58,8 @@ class MnistTrueFalseMultipleNumbers(Dataset):
             train: bool = True,
             download: bool = True,
             transform: Optional[Callable] = None,
-            num_digits_per_picture: int = 4
+            num_digits_per_picture: int = 4,
+            fashion_mnist: bool = False
     ) -> None:
         super().__init__()
 
@@ -62,7 +68,8 @@ class MnistTrueFalseMultipleNumbers(Dataset):
             train=train,
             download=download,
             transform=transform,
-            num_digits_per_picture=num_digits_per_picture
+            num_digits_per_picture=num_digits_per_picture,
+            fashion_mnist=fashion_mnist
         )
 
     @staticmethod
@@ -73,14 +80,21 @@ class MnistTrueFalseMultipleNumbers(Dataset):
         image, numbers = self.mnist[index]
         target = 1
 
+        # two outputs for true/false + 10 outputs for the individual numbers
+        number_target = one_hot(numbers.long() + 2, num_classes=12).sum(0).clamp(max=1)
+
         if randint(0, 1) == 0:
-            newNumbers = numbers.detach().clone()
+            randIdx = randint(0, len(numbers) - 1)
+            numbers[randIdx] = self.randomize_number(numbers[randIdx])
+
+            # all other numbers have 1/4 chance of also being wrong
             for idx in range(len(numbers)):
-                while newNumbers[idx] in numbers:
-                    newNumbers[idx] = self.randomize_number(numbers[idx])
+                if idx != randIdx and randint(0, 3) == 0:
+                    numbers[idx] = self.randomize_number(numbers[idx])
 
             target = 0
-            numbers = newNumbers
+
+        target = one_hot(tensor(target), num_classes=12) + number_target
 
         return (image, numbers), target
 

@@ -7,7 +7,7 @@ from .DataModule import DataModule
 
 
 class MnistDataModule(DataModule):
-    def __init__(self, batch_size: Optional[int] = 32) -> None:
+    def __init__(self, batch_size: Optional[int] = 32, fashion_mnist: bool = False) -> None:
         transform = ToTensor()
         root = './datasets'
 
@@ -15,7 +15,8 @@ class MnistDataModule(DataModule):
             root=root,
             train=True,
             download=True,
-            transform=transform
+            transform=transform,
+            fashion_mnist=fashion_mnist
         )
 
         mnist_len = len(mnist_full)
@@ -30,7 +31,8 @@ class MnistDataModule(DataModule):
             root=root,
             train=False,
             download=True,
-            transform=transform
+            transform=transform,
+            fashion_mnist=fashion_mnist
         )
 
         self.batch_size = batch_size
