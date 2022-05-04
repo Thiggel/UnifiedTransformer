@@ -3,6 +3,9 @@ from torch.utils.data import DataLoader
 from typing import Tuple
 from alive_progress import alive_bar
 import matplotlib.pyplot as plt
+from matplotlib import font_manager
+from pathlib import Path
+from os import getcwd
 
 from Dataset import DataModule
 from Utilities import EarlyStopping, ExtendedModule
@@ -24,12 +27,18 @@ class Trainer:
 
         self.early_stopping = EarlyStopping(patience=3, verbose=True, path=checkpoint_filename)
 
+        font_path = Path(getcwd(), 'assets/fonts/cmuserif.ttf')
+        font_manager.FontEntry(
+            fname=font_path,
+            name='serif'
+        )
+
     def fit(self) -> None:
         train_len = len(self.data_module.train_dataloader())
         train_loss_within_epoch_history = []
         train_loss_history = []
         val_loss_history = []
-        acc_history = []
+        acc_history = []  # accuracy starts at 0
 
         for epoch in range(self.n_epochs):
             train_loss = 0.0
@@ -59,21 +68,32 @@ class Trainer:
             val_loss_history.append(val_loss)
             acc_history.append(val_acc)
 
-            if self.early_stopping.early_stop or epoch == 3:
+            if self.early_stopping.early_stop:
                 print("Early stopping")
                 break
 
         val_x = range(train_len, len(train_loss_within_epoch_history) + 1, train_len)
+        plt.rcParams.update({
+            'font.family': 'serif',
+            'axes.spines.right': False,
+            'axes.spines.top': False,
+            'axes.titlesize': 12
+        })
         plt.plot(range(len(train_loss_within_epoch_history)), train_loss_within_epoch_history, label="Training Loss")
         plt.plot(val_x, train_loss_history, label="Training Loss after Epoch")
         plt.plot(val_x, val_loss_history, label="Validation Loss")
         plt.plot(val_x, acc_history, label="Validation Accuracy")
-        plt.xlabel("Batch number")
+        plt.xlabel("Batch index")
         plt.ylabel("Loss / Accuracy")
-
-        title = self.checkpoint_filename.split('.')[0].split('/')[1]
-        plt.title(title)
-        plt.savefig(title)
+        plt.subplots_adjust(bottom=0.25)
+        caption = self.checkpoint_filename.split('.pt')[0].split('/')[1]
+        caption = caption.split(' ')
+        caption.insert(5, '\n')
+        caption = ' '.join(caption)
+        plt.figtext(0.5, 0.05, r"$\bf{Hyper parameters}$: " + caption, wrap=True, horizontalalignment='center', fontsize=8)
+        plt.title("Loss/accuracy throughout training")
+        plt.legend(loc='upper right')
+        plt.savefig(f"plots/{caption}.png", dpi=300)
 
         plt.clf()
 

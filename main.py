@@ -70,17 +70,25 @@ def main() -> None:
     parser.add_argument('--dataset')
     arguments = parser.parse_args()
 
-    MAX_EPOCHS = 3  # 15 if arguments.dataset in ['mnist', 'fashion-mnist'] else 60
+    MAX_EPOCHS = 1  # 15 if arguments.dataset in ['mnist', 'fashion-mnist'] else 60
     PATCH_SIZE = (4, 4) if arguments.image_embedding != 'convolutional' else (28, 28)
-    NUM_RUNS_PER_SETTING = 5
-    LOG_FILENAME = 'attention-based.log' if arguments.image_embedding != 'convolutional' else 'convolutional.log'
+    NUM_RUNS_PER_SETTING = 1  # 5
+
+    LOG_FILENAME = 'logs/' + dumps({
+        'image-embedding': arguments.image_embedding or 'attention-based',
+        'dataset': arguments.dataset or 'mnist'
+    }) + '.log'
+
+    # use mnist or fashion mnist as dataset
     FASHION_MNIST = False if arguments.dataset == 'mnist' else 'True'
 
+    # Hyper Parameters for random grid search
     DROPOUT = [0.1, 0.3, 0.4]
     LR = [1e-4, 1e-3, 1e-2]
-    NUM_ENCODER_LAYERS = [1, 3, 6]
+    NUM_ENCODER_LAYERS = [1] # , 3, 6
     CONV_LAYERS = [0] if arguments.image_embedding != 'convolutional' else [1, 3, 5]
 
+    # Random Grid Search
     permutations = list(itertools.product(DROPOUT, LR, NUM_ENCODER_LAYERS, CONV_LAYERS))
     shuffle(permutations)
     results = [[0]] * len(permutations)
@@ -95,7 +103,10 @@ def main() -> None:
             for _ in range(NUM_RUNS_PER_SETTING)
         ]))]
 
-        os.remove(LOG_FILENAME)
+        # Overwrite log file
+        if os.path.exists(LOG_FILENAME):
+            os.remove(LOG_FILENAME)
+
         with open(LOG_FILENAME, 'w') as file:
             file.write(tabulate(zip(permutations, results)))
 
