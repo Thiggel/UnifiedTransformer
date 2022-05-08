@@ -65,8 +65,8 @@ class Trainer:
 
             val_loss, val_acc = self.validate()
 
-            val_loss_history.append(val_loss)
-            acc_history.append(val_acc)
+            val_loss_history.append(val_loss.item())
+            acc_history.append(val_acc.item())
 
             if self.early_stopping.early_stop:
                 print("Early stopping")
