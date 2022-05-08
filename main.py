@@ -70,7 +70,7 @@ def main() -> None:
     parser.add_argument('--dataset')
     arguments = parser.parse_args()
 
-    MAX_EPOCHS = 15 if arguments.dataset in ['mnist', 'fashion-mnist'] else 60
+    MAX_EPOCHS = 15  # if arguments.dataset in ['mnist', 'fashion-mnist'] else 60
     PATCH_SIZE = (4, 4) if arguments.image_embedding != 'convolutional' else (28, 28)
     NUM_RUNS_PER_SETTING = 5
 
