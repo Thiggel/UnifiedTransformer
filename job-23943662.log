@@ -15493,3 +15493,29 @@ Validation accuracy: 63.03%
 
 
 Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 1:32.5 (14.20/s) 
+Loss: 0.70
+|████████████████████████████████████████| 563/563 [100%] in 20.4s (27.58/s) 
+
+
+Validating:
+Validation loss decreased (0.698346 --> 0.698339).  Saving model ...
+Validation loss: 0.70
+Validation accuracy: 63.08%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 23.2s (24.22/s) 
+Test loss: 0.70
+Test accuracy: 63.07%
+
+
+Done with 5 runs!
+
+
+
+Starting 5 for hyper parameter setting: 
+Hyper parameters:  {'lr': 0.0001, 'conv_layers': 0, 'dropout': 0.3, 'num_encoder_layers': 6, 'fashion_mnist': 'True'}
+Epoch 1/15
