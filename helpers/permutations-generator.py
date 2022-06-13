@@ -22,14 +22,12 @@ if __name__ == '__main__':
         dataset, image_embedding, embedding_dimension, num_heads = permutation
         print(dataset, image_embedding, embedding_dimension, num_heads)
 
-        hyperparams = {
-            'dataset': dataset,
-            'image-embedding': image_embedding,
-            'embedding-dimension': embedding_dimension,
-            'num-heads': num_heads
-        }
-
-        filename = f'jobs/jobdescription-{dumps(hyperparams)}.sh'.replace(' ', '_')
+        filename = f'jobs/jobdescription-{permutation}.sh' \
+            .replace(' ', '_' )\
+            .replace("(", "") \
+            .replace(")", "") \
+            .replace(",", "") \
+            .replace("'", "")
 
         # duplicate file 'jobs/jobdescription-sample.sh'
         shutil.copyfile('jobs/jobdescription-sample.sh', filename)
