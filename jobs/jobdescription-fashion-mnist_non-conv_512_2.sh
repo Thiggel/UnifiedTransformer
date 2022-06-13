@@ -3,7 +3,7 @@
 #SBATCH --job-name=UnifiedTransformer
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=f.m.de.sousa.horta.osorio.laitenberger@student.rug.nl
-#SBATCH --output=job-logs/job-('fashion-mnist', 'non-conv', 512, 2).log
+#SBATCH --output=job-logs/job-fashion-mnist_non-conv_512_2.log
 #SBATCH --time=3-00:00:00
 #SBATCH --partition=gpu
 #SBATCH --gres=gpu:v100:1

@@ -1,7 +1,5 @@
 import itertools
 import shutil
-from json import dumps
-
 
 if __name__ == '__main__':
     dataset = ['mnist', 'fashion-mnist']
@@ -23,7 +21,7 @@ if __name__ == '__main__':
         print(dataset, image_embedding, embedding_dimension, num_heads)
 
         filename = f'jobs/jobdescription-{permutation}.sh' \
-            .replace(' ', '_' )\
+            .replace(' ', '_') \
             .replace("(", "") \
             .replace(")", "") \
             .replace(",", "") \
@@ -35,7 +33,11 @@ if __name__ == '__main__':
         with open(filename, 'r') as file:
             file_content = file.read()
 
-        file_content = file_content.replace('%j', str(permutation))
+        file_content = file_content.replace('%j',
+                                            filename
+                                            .replace('jobs/jobdescription-', '')
+                                            .replace('.sh', '')
+                                            )
 
         file_content += (
             f'\n'
