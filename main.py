@@ -80,7 +80,9 @@ def main() -> None:
 
     LOG_FILENAME = 'logs/' + dumps({
         'image-embedding': arguments.image_embedding or 'non-convolutional',
-        'dataset': arguments.dataset or 'mnist'
+        'dataset': arguments.dataset or 'mnist',
+        'embedding-dimension': arguments.embedding_dimension,
+        'num-heads': arguments.num_heads
     }) + '.log'
 
     # use mnist or fashion mnist as dataset
