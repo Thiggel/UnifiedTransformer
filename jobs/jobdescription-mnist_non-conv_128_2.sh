@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=UnifiedTransformer
+#SBATCH --job-name=UnifiedTransformer-mnist_non-conv_128_2
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=f.m.de.sousa.horta.osorio.laitenberger@student.rug.nl
 #SBATCH --output=job-mnist_non-conv_128_2.log

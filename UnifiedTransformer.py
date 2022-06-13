@@ -89,7 +89,8 @@ class UnifiedTransformer(ExtendedModule):
 
         y_hat = self(images, numbers)
         loss = self.loss_fn(y_hat, targets.float())
-        acc = self.accuracy(y_hat, targets.long())
+        # for the accuracy, we only need to look at the true/false assertion
+        acc = self.accuracy(y_hat[0:2], targets.long()[0:2])
 
         return loss, acc
 

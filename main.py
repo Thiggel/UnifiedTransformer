@@ -28,7 +28,9 @@ def run(
         'conv_layers': num_conv_layers,
         'dropout': dropout,
         'num_encoder_layers': num_encoder_layers,
-        'fashion_mnist': fashion_mnist
+        'fashion_mnist': fashion_mnist,
+        'embed_dim': embed_dim,
+        'num_heads': num_heads
     }
 
     filename = f'saved/{dumps(hyperparams)}.pt'
