@@ -29,7 +29,7 @@ if __name__ == '__main__':
             'num-heads': num_heads
         }
 
-        filename = f'jobs/jobdescription-{dumps(hyperparams)}.sh'
+        filename = f'jobs/jobdescription-{dumps(hyperparams)}.sh'.replace(' ', '_')
 
         # duplicate file 'jobs/jobdescription-sample.sh'
         shutil.copyfile('jobs/jobdescription-sample.sh', filename)

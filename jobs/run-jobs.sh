@@ -1,36 +1,36 @@
-sbatch jobs/jobdescription-{"dataset": "mnist", "image-embedding": "convolutional", "embedding-dimension": 128, "num-heads": 2}.sh
-sbatch jobs/jobdescription-{"dataset": "mnist", "image-embedding": "convolutional", "embedding-dimension": 128, "num-heads": 4}.sh
-sbatch jobs/jobdescription-{"dataset": "mnist", "image-embedding": "convolutional", "embedding-dimension": 128, "num-heads": 8}.sh
-sbatch jobs/jobdescription-{"dataset": "mnist", "image-embedding": "convolutional", "embedding-dimension": 256, "num-heads": 2}.sh
-sbatch jobs/jobdescription-{"dataset": "mnist", "image-embedding": "convolutional", "embedding-dimension": 256, "num-heads": 4}.sh
-sbatch jobs/jobdescription-{"dataset": "mnist", "image-embedding": "convolutional", "embedding-dimension": 256, "num-heads": 8}.sh
-sbatch jobs/jobdescription-{"dataset": "mnist", "image-embedding": "convolutional", "embedding-dimension": 512, "num-heads": 2}.sh
-sbatch jobs/jobdescription-{"dataset": "mnist", "image-embedding": "convolutional", "embedding-dimension": 512, "num-heads": 4}.sh
-sbatch jobs/jobdescription-{"dataset": "mnist", "image-embedding": "convolutional", "embedding-dimension": 512, "num-heads": 8}.sh
-sbatch jobs/jobdescription-{"dataset": "mnist", "image-embedding": "non-convolutional", "embedding-dimension": 128, "num-heads": 2}.sh
-sbatch jobs/jobdescription-{"dataset": "mnist", "image-embedding": "non-convolutional", "embedding-dimension": 128, "num-heads": 4}.sh
-sbatch jobs/jobdescription-{"dataset": "mnist", "image-embedding": "non-convolutional", "embedding-dimension": 128, "num-heads": 8}.sh
-sbatch jobs/jobdescription-{"dataset": "mnist", "image-embedding": "non-convolutional", "embedding-dimension": 256, "num-heads": 2}.sh
-sbatch jobs/jobdescription-{"dataset": "mnist", "image-embedding": "non-convolutional", "embedding-dimension": 256, "num-heads": 4}.sh
-sbatch jobs/jobdescription-{"dataset": "mnist", "image-embedding": "non-convolutional", "embedding-dimension": 256, "num-heads": 8}.sh
-sbatch jobs/jobdescription-{"dataset": "mnist", "image-embedding": "non-convolutional", "embedding-dimension": 512, "num-heads": 2}.sh
-sbatch jobs/jobdescription-{"dataset": "mnist", "image-embedding": "non-convolutional", "embedding-dimension": 512, "num-heads": 4}.sh
-sbatch jobs/jobdescription-{"dataset": "mnist", "image-embedding": "non-convolutional", "embedding-dimension": 512, "num-heads": 8}.sh
-sbatch jobs/jobdescription-{"dataset": "fashion-mnist", "image-embedding": "convolutional", "embedding-dimension": 128, "num-heads": 2}.sh
-sbatch jobs/jobdescription-{"dataset": "fashion-mnist", "image-embedding": "convolutional", "embedding-dimension": 128, "num-heads": 4}.sh
-sbatch jobs/jobdescription-{"dataset": "fashion-mnist", "image-embedding": "convolutional", "embedding-dimension": 128, "num-heads": 8}.sh
-sbatch jobs/jobdescription-{"dataset": "fashion-mnist", "image-embedding": "convolutional", "embedding-dimension": 256, "num-heads": 2}.sh
-sbatch jobs/jobdescription-{"dataset": "fashion-mnist", "image-embedding": "convolutional", "embedding-dimension": 256, "num-heads": 4}.sh
-sbatch jobs/jobdescription-{"dataset": "fashion-mnist", "image-embedding": "convolutional", "embedding-dimension": 256, "num-heads": 8}.sh
-sbatch jobs/jobdescription-{"dataset": "fashion-mnist", "image-embedding": "convolutional", "embedding-dimension": 512, "num-heads": 2}.sh
-sbatch jobs/jobdescription-{"dataset": "fashion-mnist", "image-embedding": "convolutional", "embedding-dimension": 512, "num-heads": 4}.sh
-sbatch jobs/jobdescription-{"dataset": "fashion-mnist", "image-embedding": "convolutional", "embedding-dimension": 512, "num-heads": 8}.sh
-sbatch jobs/jobdescription-{"dataset": "fashion-mnist", "image-embedding": "non-convolutional", "embedding-dimension": 128, "num-heads": 2}.sh
-sbatch jobs/jobdescription-{"dataset": "fashion-mnist", "image-embedding": "non-convolutional", "embedding-dimension": 128, "num-heads": 4}.sh
-sbatch jobs/jobdescription-{"dataset": "fashion-mnist", "image-embedding": "non-convolutional", "embedding-dimension": 128, "num-heads": 8}.sh
-sbatch jobs/jobdescription-{"dataset": "fashion-mnist", "image-embedding": "non-convolutional", "embedding-dimension": 256, "num-heads": 2}.sh
-sbatch jobs/jobdescription-{"dataset": "fashion-mnist", "image-embedding": "non-convolutional", "embedding-dimension": 256, "num-heads": 4}.sh
-sbatch jobs/jobdescription-{"dataset": "fashion-mnist", "image-embedding": "non-convolutional", "embedding-dimension": 256, "num-heads": 8}.sh
-sbatch jobs/jobdescription-{"dataset": "fashion-mnist", "image-embedding": "non-convolutional", "embedding-dimension": 512, "num-heads": 2}.sh
-sbatch jobs/jobdescription-{"dataset": "fashion-mnist", "image-embedding": "non-convolutional", "embedding-dimension": 512, "num-heads": 4}.sh
-sbatch jobs/jobdescription-{"dataset": "fashion-mnist", "image-embedding": "non-convolutional", "embedding-dimension": 512, "num-heads": 8}.sh
+sbatch jobs/jobdescription-{"dataset":_"mnist",_"image-embedding":_"convolutional",_"embedding-dimension":_128,_"num-heads":_2}.sh
+sbatch jobs/jobdescription-{"dataset":_"mnist",_"image-embedding":_"convolutional",_"embedding-dimension":_128,_"num-heads":_4}.sh
+sbatch jobs/jobdescription-{"dataset":_"mnist",_"image-embedding":_"convolutional",_"embedding-dimension":_128,_"num-heads":_8}.sh
+sbatch jobs/jobdescription-{"dataset":_"mnist",_"image-embedding":_"convolutional",_"embedding-dimension":_256,_"num-heads":_2}.sh
+sbatch jobs/jobdescription-{"dataset":_"mnist",_"image-embedding":_"convolutional",_"embedding-dimension":_256,_"num-heads":_4}.sh
+sbatch jobs/jobdescription-{"dataset":_"mnist",_"image-embedding":_"convolutional",_"embedding-dimension":_256,_"num-heads":_8}.sh
+sbatch jobs/jobdescription-{"dataset":_"mnist",_"image-embedding":_"convolutional",_"embedding-dimension":_512,_"num-heads":_2}.sh
+sbatch jobs/jobdescription-{"dataset":_"mnist",_"image-embedding":_"convolutional",_"embedding-dimension":_512,_"num-heads":_4}.sh
+sbatch jobs/jobdescription-{"dataset":_"mnist",_"image-embedding":_"convolutional",_"embedding-dimension":_512,_"num-heads":_8}.sh
+sbatch jobs/jobdescription-{"dataset":_"mnist",_"image-embedding":_"non-convolutional",_"embedding-dimension":_128,_"num-heads":_2}.sh
+sbatch jobs/jobdescription-{"dataset":_"mnist",_"image-embedding":_"non-convolutional",_"embedding-dimension":_128,_"num-heads":_4}.sh
+sbatch jobs/jobdescription-{"dataset":_"mnist",_"image-embedding":_"non-convolutional",_"embedding-dimension":_128,_"num-heads":_8}.sh
+sbatch jobs/jobdescription-{"dataset":_"mnist",_"image-embedding":_"non-convolutional",_"embedding-dimension":_256,_"num-heads":_2}.sh
+sbatch jobs/jobdescription-{"dataset":_"mnist",_"image-embedding":_"non-convolutional",_"embedding-dimension":_256,_"num-heads":_4}.sh
+sbatch jobs/jobdescription-{"dataset":_"mnist",_"image-embedding":_"non-convolutional",_"embedding-dimension":_256,_"num-heads":_8}.sh
+sbatch jobs/jobdescription-{"dataset":_"mnist",_"image-embedding":_"non-convolutional",_"embedding-dimension":_512,_"num-heads":_2}.sh
+sbatch jobs/jobdescription-{"dataset":_"mnist",_"image-embedding":_"non-convolutional",_"embedding-dimension":_512,_"num-heads":_4}.sh
+sbatch jobs/jobdescription-{"dataset":_"mnist",_"image-embedding":_"non-convolutional",_"embedding-dimension":_512,_"num-heads":_8}.sh
+sbatch jobs/jobdescription-{"dataset":_"fashion-mnist",_"image-embedding":_"convolutional",_"embedding-dimension":_128,_"num-heads":_2}.sh
+sbatch jobs/jobdescription-{"dataset":_"fashion-mnist",_"image-embedding":_"convolutional",_"embedding-dimension":_128,_"num-heads":_4}.sh
+sbatch jobs/jobdescription-{"dataset":_"fashion-mnist",_"image-embedding":_"convolutional",_"embedding-dimension":_128,_"num-heads":_8}.sh
+sbatch jobs/jobdescription-{"dataset":_"fashion-mnist",_"image-embedding":_"convolutional",_"embedding-dimension":_256,_"num-heads":_2}.sh
+sbatch jobs/jobdescription-{"dataset":_"fashion-mnist",_"image-embedding":_"convolutional",_"embedding-dimension":_256,_"num-heads":_4}.sh
+sbatch jobs/jobdescription-{"dataset":_"fashion-mnist",_"image-embedding":_"convolutional",_"embedding-dimension":_256,_"num-heads":_8}.sh
+sbatch jobs/jobdescription-{"dataset":_"fashion-mnist",_"image-embedding":_"convolutional",_"embedding-dimension":_512,_"num-heads":_2}.sh
+sbatch jobs/jobdescription-{"dataset":_"fashion-mnist",_"image-embedding":_"convolutional",_"embedding-dimension":_512,_"num-heads":_4}.sh
+sbatch jobs/jobdescription-{"dataset":_"fashion-mnist",_"image-embedding":_"convolutional",_"embedding-dimension":_512,_"num-heads":_8}.sh
+sbatch jobs/jobdescription-{"dataset":_"fashion-mnist",_"image-embedding":_"non-convolutional",_"embedding-dimension":_128,_"num-heads":_2}.sh
+sbatch jobs/jobdescription-{"dataset":_"fashion-mnist",_"image-embedding":_"non-convolutional",_"embedding-dimension":_128,_"num-heads":_4}.sh
+sbatch jobs/jobdescription-{"dataset":_"fashion-mnist",_"image-embedding":_"non-convolutional",_"embedding-dimension":_128,_"num-heads":_8}.sh
+sbatch jobs/jobdescription-{"dataset":_"fashion-mnist",_"image-embedding":_"non-convolutional",_"embedding-dimension":_256,_"num-heads":_2}.sh
+sbatch jobs/jobdescription-{"dataset":_"fashion-mnist",_"image-embedding":_"non-convolutional",_"embedding-dimension":_256,_"num-heads":_4}.sh
+sbatch jobs/jobdescription-{"dataset":_"fashion-mnist",_"image-embedding":_"non-convolutional",_"embedding-dimension":_256,_"num-heads":_8}.sh
+sbatch jobs/jobdescription-{"dataset":_"fashion-mnist",_"image-embedding":_"non-convolutional",_"embedding-dimension":_512,_"num-heads":_2}.sh
+sbatch jobs/jobdescription-{"dataset":_"fashion-mnist",_"image-embedding":_"non-convolutional",_"embedding-dimension":_512,_"num-heads":_4}.sh
+sbatch jobs/jobdescription-{"dataset":_"fashion-mnist",_"image-embedding":_"non-convolutional",_"embedding-dimension":_512,_"num-heads":_8}.sh
