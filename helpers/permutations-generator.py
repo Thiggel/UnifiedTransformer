@@ -5,7 +5,7 @@ from json import dumps
 
 if __name__ == '__main__':
     dataset = ['mnist', 'fashion-mnist']
-    image_embedding = ['convolutional', 'non-convolutional']
+    image_embedding = ['convolutional', 'nonconvolutional']
     embedding_dimension = [128, 256, 512]
     num_heads = [2, 4, 8]
 
@@ -51,5 +51,5 @@ if __name__ == '__main__':
 
         run_jobs_file_content += f'sbatch {filename}\n'
 
-    with open('jobs/run-jobs.sh', 'w') as file:
+    with open('run-jobs.sh', 'w') as file:
         file.write(run_jobs_file_content)

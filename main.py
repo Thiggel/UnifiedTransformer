@@ -79,7 +79,7 @@ def main() -> None:
     NUM_RUNS_PER_SETTING = 5
 
     LOG_FILENAME = 'logs/' + dumps({
-        'image-embedding': arguments.image_embedding or 'non-convolutional',
+        'image-embedding': arguments.image_embedding or 'nonconvolutional',
         'dataset': arguments.dataset or 'mnist',
         'embedding-dimension': arguments.embedding_dimension,
         'num-heads': arguments.num_heads
