@@ -79,7 +79,7 @@ def main() -> None:
     NUM_RUNS_PER_SETTING = 5
 
     LOG_FILENAME = 'logs/' + dumps({
-        'image-embedding': arguments.image_embedding or 'nonconvolutional',
+        'image-embedding': arguments.image_embedding or 'non-conv',
         'dataset': arguments.dataset or 'mnist',
         'embedding-dimension': arguments.embedding_dimension,
         'num-heads': arguments.num_heads
@@ -92,7 +92,7 @@ def main() -> None:
     DROPOUT = [0.1, 0.2, 0.3]
     LR = [1e-2, 1e-3, 1e-4]
     NUM_ENCODER_LAYERS = [2, 4, 8]
-    CONV_LAYERS = [0] if arguments.image_embedding != 'convolutional' else [1, 3, 5]
+    CONV_LAYERS = [0] if arguments.image_embedding != 'conv' else [1, 3, 5]
     EMBED_DIM = arguments.embedding_dimension
     NUM_HEADS = arguments.num_heads
 

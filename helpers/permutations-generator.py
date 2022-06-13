@@ -5,7 +5,7 @@ from json import dumps
 
 if __name__ == '__main__':
     dataset = ['mnist', 'fashion-mnist']
-    image_embedding = ['convolutional', 'nonconvolutional']
+    image_embedding = ['conv', 'non-conv']
     embedding_dimension = [128, 256, 512]
     num_heads = [2, 4, 8]
 
