@@ -2,12 +2,9 @@ from torch import rand, stack, vstack, ones, cat, Tensor, device, cuda
 from torch.nn import Sequential, \
     Linear, \
     Softmax, \
-    Sigmoid, \
     Embedding, \
     Parameter, \
-    BCEWithLogitsLoss, \
-    BCELoss, \
-    CrossEntropyLoss
+    BCEWithLogitsLoss
 from torch.optim import Adam
 from typing import Tuple
 from torchmetrics import Accuracy
@@ -37,7 +34,7 @@ class UnifiedTransformer(ExtendedModule):
 
         self.patch_embedding = PatchEmbedding(input_shape, patch_size, embed_dim, conv_layers)
 
-        self.sequence_length = text_length * self.patch_embedding.n_patches + text_length + 1
+        self.sequence_length = self.patch_embedding.n_patches + text_length + 1
 
         self.embedding = Embedding(vocab_size, embed_dim)
 
@@ -46,13 +43,10 @@ class UnifiedTransformer(ExtendedModule):
         self.positional_encoding = PositionalEncoding(embed_dim, self.sequence_length)
         self.encoder = Encoder(self.sequence_length, input_shape, n_heads, embed_dim, depth, dropout)
 
-        self.MLP = Sequential(
-            Linear(embed_dim, self.output_dim),
-            Softmax(dim=1)  # Sigmoid() if output_dim == 1 else
-        )
+        self.MLP = Linear(embed_dim, self.output_dim)
 
         self.optimizer = Adam(self.parameters(), lr=learning_rate)
-        self.loss_fn = BCEWithLogitsLoss()  # BCELoss() if output_dim == 1 else CrossEntropyLoss()
+        self.loss_fn = BCEWithLogitsLoss()
 
         self.accuracy = Accuracy()
 

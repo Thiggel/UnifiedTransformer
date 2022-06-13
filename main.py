@@ -19,7 +19,9 @@ def run(
         num_encoder_layers: int,
         patch_size: Tuple[int, int],
         max_epochs: int,
-        fashion_mnist: bool
+        fashion_mnist: bool,
+        embed_dim: int,
+        num_heads: int
 ) -> float:
     hyperparams = {
         'lr': lr,
@@ -36,10 +38,10 @@ def run(
     data_module = MnistDataModule(fashion_mnist=fashion_mnist)
 
     model = UnifiedTransformer(
-        input_shape=(1, 28, 28),
+        input_shape=(1, 56, 56),
         patch_size=patch_size,
-        embed_dim=20,
-        n_heads=2,
+        embed_dim=embed_dim,
+        n_heads=num_heads,
         output_dim=1,
         learning_rate=lr,
         conv_layers=num_conv_layers,
@@ -66,16 +68,18 @@ def run(
 
 def main() -> None:
     parser = ArgumentParser()
-    parser.add_argument('--image-embedding')
     parser.add_argument('--dataset')
+    parser.add_argument('--image-embedding')
+    parser.add_argument('--embedding-dimension', type=int)
+    parser.add_argument('--num-heads', type=int)
     arguments = parser.parse_args()
 
-    MAX_EPOCHS = 15  # if arguments.dataset in ['mnist', 'fashion-mnist'] else 60
-    PATCH_SIZE = (4, 4) if arguments.image_embedding != 'convolutional' else (28, 28)
+    MAX_EPOCHS = 15
+    PATCH_SIZE = (4, 4)
     NUM_RUNS_PER_SETTING = 5
 
     LOG_FILENAME = 'logs/' + dumps({
-        'image-embedding': arguments.image_embedding or 'attention-based',
+        'image-embedding': arguments.image_embedding or 'non-convolutional',
         'dataset': arguments.dataset or 'mnist'
     }) + '.log'
 
@@ -83,10 +87,12 @@ def main() -> None:
     FASHION_MNIST = False if arguments.dataset == 'mnist' else 'True'
 
     # Hyper Parameters for random grid search
-    DROPOUT = [0.1, 0.3, 0.4]
-    LR = [1e-4, 1e-3, 1e-2]
-    NUM_ENCODER_LAYERS = [1, 3, 6]
+    DROPOUT = [0.1, 0.2, 0.3]
+    LR = [1e-2, 1e-3, 1e-4]
+    NUM_ENCODER_LAYERS = [2, 4, 8]
     CONV_LAYERS = [0] if arguments.image_embedding != 'convolutional' else [1, 3, 5]
+    EMBED_DIM = arguments.embedding_dimension
+    NUM_HEADS = arguments.num_heads
 
     # Random Grid Search
     permutations = list(itertools.product(DROPOUT, LR, NUM_ENCODER_LAYERS, CONV_LAYERS))
@@ -99,7 +105,17 @@ def main() -> None:
         print(f"Starting {NUM_RUNS_PER_SETTING} for hyper parameter setting: ")
 
         results[idx] = [item.item() for item in std_mean(tensor([
-            run(lr, num_conv_layers, dropout, num_encoder_layers, PATCH_SIZE, MAX_EPOCHS, FASHION_MNIST)
+            run(
+                lr,
+                num_conv_layers,
+                dropout,
+                num_encoder_layers,
+                PATCH_SIZE,
+                MAX_EPOCHS,
+                FASHION_MNIST,
+                EMBED_DIM,
+                NUM_HEADS
+            )
             for _ in range(NUM_RUNS_PER_SETTING)
         ]))]
 

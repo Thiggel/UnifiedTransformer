@@ -27,6 +27,6 @@ class PositionalEncoding(nn.Module):
         return result
 
     def forward(self, x: torch.FloatTensor) -> torch.FloatTensor:
-        x = x + self.positional_encoding.repeat(x.shape[0], 1, 1).to(self.dev)
+        x += self.positional_encoding.repeat(x.shape[0], 1, 1).to(self.dev)
 
         return x

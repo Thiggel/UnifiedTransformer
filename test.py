@@ -2,8 +2,9 @@ from torchvision.transforms import ToPILImage
 from PIL import ImageFont, ImageDraw, Image
 from torch import Tensor, load, tensor, float, cat
 from math import sqrt
-from typing import List
+from typing import List, Tuple
 from random import random
+from json import dumps
 
 from UnifiedTransformer import UnifiedTransformer
 from Dataset import MnistDataModule
@@ -102,8 +103,14 @@ def generate_full_attention_map_image(images, datapointIdx, text, head, patch_si
     )
 
 
-def create_attention_maps(model: UnifiedTransformer, images: Tensor, text: Tensor) -> None:
-    patch_size = (4, 4)
+def n_patches(input_shape, patch_size) -> int:
+    _, width, height = input_shape
+    patch_width, patch_height = patch_size
+
+    return (width // patch_width) * (height // patch_height)
+
+def create_attention_maps(model: UnifiedTransformer, images: Tensor, text: Tensor, patch_size: Tuple[int, int]) -> None:
+    num_patches = n_patches((1, 56, 56), patch_size)
 
     # after processing the input, the buffers in the network contain the attention
     # for the entire batch, so we first loop through all layers for extracting the
@@ -111,10 +118,10 @@ def create_attention_maps(model: UnifiedTransformer, images: Tensor, text: Tenso
     for layerIdx, layer in enumerate(model.encoder.layers):
         # shape: (32, 2, 201, 201) 'batch_size, attention_head, sequence, sequence'
         # ->     (32, 2, 4, 201)   'batch_size, attention_head, text_sequence, sequence'
-        [_, text_attention, _] = layer.attention.attention_buffer.split([196, 4, 1], dim=2)
+        [_, text_attention, _] = layer.attention.attention_buffer.split([num_patches, 4, 1], dim=2)
         # shape: (32, 2, 4, 201) 'batch_size, attention_head, text_sequence, sequence'
         # ->     (32, 2, 4, 196) 'batch_size, attention_head, text_sequence, image_sequence'
-        [text_attention, _] = text_attention.split([196, 5], dim=3)
+        [text_attention, _] = text_attention.split([num_patches, 5], dim=3)
 
         batch_size, num_heads, num_tokens, num_patches = text_attention.shape
         patches_per_row = int(sqrt(num_patches))
@@ -132,13 +139,14 @@ def create_attention_maps(model: UnifiedTransformer, images: Tensor, text: Tenso
 
 
 def main() -> None:
-    PATCH_SIZE = (4, 4)
     CONV_LAYERS = 0
+    PATCH_SIZE = (4, 4) if CONV_LAYERS == 0 else (28, 28)
     LR = 0.01
-    DROPOUT = 0.3
+    DROPOUT = 0.1
     NUM_ENCODER_LAYERS = 3
+    FASHION_MNIST = False
 
-    data_module = MnistDataModule()
+    data_module = MnistDataModule(fashion_mnist=FASHION_MNIST == "True")
 
     model = UnifiedTransformer(
         input_shape=(1, 28, 28),
@@ -153,10 +161,17 @@ def main() -> None:
         depth=NUM_ENCODER_LAYERS
     )
 
-    model.load_state_dict(load(
-        'saved/{"lr": 0.01, "conv_layers": 0,'
-        ' "dropout": 0.3, "num_encoder_layers": 3}.pt'
-    ))
+    hyperparams = {
+        'lr': LR,
+        'conv_layers': CONV_LAYERS,
+        'dropout': DROPOUT,
+        'num_encoder_layers': NUM_ENCODER_LAYERS,
+        'fashion_mnist': FASHION_MNIST
+    }
+
+    filename = f'saved/{dumps(hyperparams)}.pt'
+
+    model.load_state_dict(load(filename))
 
     test_loader = data_module.test_dataloader()
 
@@ -166,7 +181,7 @@ def main() -> None:
 
     model(images, numbers)
 
-    create_attention_maps(model, images, numbers)
+    create_attention_maps(model, images, numbers, PATCH_SIZE)
 
 
 if __name__ == '__main__':

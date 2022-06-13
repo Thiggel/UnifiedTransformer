@@ -38,12 +38,14 @@ class Trainer:
         train_loss_within_epoch_history = []
         train_loss_history = []
         val_loss_history = []
-        acc_history = []  # accuracy starts at 0
+        acc_history = []
 
         for epoch in range(self.n_epochs):
             train_loss = 0.0
 
             print(f"Epoch {epoch + 1}/{self.n_epochs}")
+
+            self.model.train()
 
             with alive_bar(train_len) as bar:
                 for batch_idx, batch in enumerate(self.data_module.train_dataloader()):
@@ -85,14 +87,14 @@ class Trainer:
         plt.plot(val_x, acc_history, label="Validation Accuracy")
         plt.xlabel("Batch index")
         plt.ylabel("Loss / Accuracy")
-        plt.subplots_adjust(bottom=0.25)
+        plt.subplots_adjust(bottom=0.35)
         caption = self.checkpoint_filename.split('.pt')[0].split('/')[1]
         caption = caption.split(' ')
         caption.insert(5, '\n')
         caption = ' '.join(caption)
         plt.figtext(0.5, 0.05, r"$\bf{Hyper parameters}$: " + caption, wrap=True, horizontalalignment='center', fontsize=8)
         plt.title("Loss/accuracy throughout training")
-        plt.legend(loc='upper right')
+        plt.legend(loc='lower center', bbox_to_anchor=(0.5, -0.45), ncol=2)
         plt.savefig(f"plots/{caption}.png", dpi=300)
 
         plt.clf()
@@ -100,6 +102,8 @@ class Trainer:
     def test_validate(self, dataloader: DataLoader) -> Tuple[float, float]:
         test_accuracy = 0.0
         test_loss = 0.0
+
+        self.model.eval()
 
         with no_grad():
             with alive_bar(len(dataloader)) as bar:
