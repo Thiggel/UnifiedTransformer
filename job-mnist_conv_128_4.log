@@ -6290,3 +6290,13 @@ Validation accuracy: 90.28%
 Epoch 5/15
 |████████████████████████████████████████| 1313/1313 [100%] in 4:31.3 (4.84/s) 
 Loss: 0.16
+|████████████████████████████████████████| 563/563 [100%] in 1:11.0 (7.94/s) 
+
+
+Validating:
+Validation loss decreased (0.160311 --> 0.151269).  Saving model ...
+Validation loss: 0.15
+Validation accuracy: 90.39%
+
+
+Epoch 6/15
