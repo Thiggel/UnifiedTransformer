@@ -3169,3 +3169,48 @@ Validation accuracy: 89.76%
 
 
 Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 9:03.0 (2.42/s) 
+Loss: 0.18
+|████████████████████████████████████████| 563/563 [100%] in 2:35.9 (3.61/s) 
+
+
+Validating:
+Validation loss decreased (0.166043 --> 0.164562).  Saving model ...
+Validation loss: 0.16
+Validation accuracy: 89.85%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 9:03.5 (2.42/s) 
+Loss: 0.17
+|████████████████████████████████████████| 563/563 [100%] in 2:32.5 (3.69/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.17
+Validation accuracy: 89.94%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 9:00.9 (2.43/s) 
+Loss: 0.17
+|████████████████████████████████████████| 563/563 [100%] in 2:35.0 (3.63/s) 
+
+
+Validating:
+EarlyStopping counter: 2 out of 3
+Validation loss: 0.17
+Validation accuracy: 89.62%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 2:34.3 (3.65/s) 
+Test loss: 0.16
+Test accuracy: 90.02%
+
+
+Hyper parameters:  {'lr': 0.01, 'conv_layers': 1, 'dropout': 0.3, 'num_encoder_layers': 8, 'fashion_mnist': False, 'embed_dim': 512, 'num_heads': 4}
+Epoch 1/15

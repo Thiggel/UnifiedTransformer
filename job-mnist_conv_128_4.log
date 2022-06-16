@@ -6219,3 +6219,74 @@ Validation accuracy: 91.07%
 
 
 Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 4:16.9 (5.11/s) 
+Loss: 0.14
+|████████████████████████████████████████| 563/563 [100%] in 1:10.2 (8.02/s) 
+
+
+Validating:
+Validation loss decreased (0.138387 --> 0.136740).  Saving model ...
+Validation loss: 0.14
+Validation accuracy: 90.82%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 1:09.7 (8.08/s) 
+Test loss: 0.14
+Test accuracy: 90.81%
+
+
+Hyper parameters:  {'lr': 0.01, 'conv_layers': 5, 'dropout': 0.1, 'num_encoder_layers': 4, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 4:21.9 (5.01/s) 
+Loss: 0.46
+|████████████████████████████████████████| 563/563 [100%] in 1:10.4 (8.00/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.268621).  Saving model ...
+Validation loss: 0.27
+Validation accuracy: 85.67%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 4:17.4 (5.10/s) 
+Loss: 0.23
+|████████████████████████████████████████| 563/563 [100%] in 1:10.5 (7.98/s) 
+
+
+Validating:
+Validation loss decreased (0.268621 --> 0.198542).  Saving model ...
+Validation loss: 0.20
+Validation accuracy: 88.63%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 4:17.2 (5.11/s) 
+Loss: 0.19
+|████████████████████████████████████████| 563/563 [100%] in 1:10.2 (8.02/s) 
+
+
+Validating:
+Validation loss decreased (0.198542 --> 0.175469).  Saving model ...
+Validation loss: 0.18
+Validation accuracy: 89.34%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 4:22.5 (5.00/s) 
+Loss: 0.17
+|████████████████████████████████████████| 563/563 [100%] in 1:12.0 (7.82/s) 
+
+
+Validating:
+Validation loss decreased (0.175469 --> 0.160311).  Saving model ...
+Validation loss: 0.16
+Validation accuracy: 90.28%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 4:31.3 (4.84/s) 
+Loss: 0.16
