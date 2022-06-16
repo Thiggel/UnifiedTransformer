@@ -11,25 +11,12 @@ from Dataset import MnistDataModule
 
 
 def generate_colors(n: int) -> List[List[int]]:
-    colors = []
-
-    red = int(256 * random())
-    green = int(256 * random())
-    blue = int(256 * random())
-
-    step = 256 / n
-
-    for i in range(n):
-        red += step
-        red %= 256
-
-        green += step
-        green %= 256
-
-        blue += step
-        blue %= 256
-
-        colors.append([int(red), int(green), int(blue), 255])
+    colors = [
+        [168, 56, 50, 255],
+        [62, 168, 50, 255],
+        [50, 139, 168, 255],
+        [255, 247, 28, 255]
+    ]
 
     return colors
 
@@ -139,12 +126,14 @@ def create_attention_maps(model: UnifiedTransformer, images: Tensor, text: Tenso
 
 
 def main() -> None:
-    CONV_LAYERS = 0
-    PATCH_SIZE = (4, 4) if CONV_LAYERS == 0 else (28, 28)
-    LR = 0.01
-    DROPOUT = 0.1
-    NUM_ENCODER_LAYERS = 3
+    CONV_LAYERS = 5
+    PATCH_SIZE = (4, 4)
+    LR = 0.001
+    DROPOUT = 0.3
+    NUM_ENCODER_LAYERS = 4
     FASHION_MNIST = False
+    EMBED_DIM = 128
+    NUM_HEADS = 2
 
     data_module = MnistDataModule(fashion_mnist=FASHION_MNIST == "True")
 
@@ -166,7 +155,9 @@ def main() -> None:
         'conv_layers': CONV_LAYERS,
         'dropout': DROPOUT,
         'num_encoder_layers': NUM_ENCODER_LAYERS,
-        'fashion_mnist': FASHION_MNIST
+        'fashion_mnist': FASHION_MNIST,
+        'embed_dim': EMBED_DIM,
+        'num_heads': NUM_HEADS
     }
 
     filename = f'saved/{dumps(hyperparams)}.pt'
