@@ -1,24 +1,12 @@
 from torchvision.transforms import ToPILImage
 from PIL import ImageFont, ImageDraw, Image
-from torch import Tensor, load, tensor, float, cat
+from torch import Tensor, load, tensor, float, cat, device
 from math import sqrt
-from typing import List, Tuple
-from random import random
+from typing import Tuple
 from json import dumps
 
 from UnifiedTransformer import UnifiedTransformer
 from Dataset import MnistDataModule
-
-
-def generate_colors(n: int) -> List[List[int]]:
-    colors = [
-        [168, 56, 50, 255],
-        [62, 168, 50, 255],
-        [50, 139, 168, 255],
-        [255, 247, 28, 255]
-    ]
-
-    return colors
 
 
 def generate_attention_map(token, tokenIdx, patch_size, pixels_per_row, colors):
@@ -69,7 +57,17 @@ def paste_text_in_image(draw, text_sequence, colors):
         )
 
 
-def generate_full_attention_map_image(images, datapointIdx, text, head, patch_size, pixels_per_row, colors, layerIdx, headIdx):
+def generate_full_attention_map_image(
+        images,
+        datapointIdx,
+        text,
+        head,
+        patch_size,
+        pixels_per_row,
+        colors,
+        layerIdx,
+        headIdx
+):
     transform = ToPILImage()
 
     # set up the image
@@ -90,14 +88,8 @@ def generate_full_attention_map_image(images, datapointIdx, text, head, patch_si
     )
 
 
-def n_patches(input_shape, patch_size) -> int:
-    _, width, height = input_shape
-    patch_width, patch_height = patch_size
-
-    return (width // patch_width) * (height // patch_height)
-
 def create_attention_maps(model: UnifiedTransformer, images: Tensor, text: Tensor, patch_size: Tuple[int, int]) -> None:
-    num_patches = n_patches((1, 56, 56), patch_size)
+    num_patches = model.patch_embedding.n_patches
 
     # after processing the input, the buffers in the network contain the attention
     # for the entire batch, so we first loop through all layers for extracting the
@@ -114,7 +106,12 @@ def create_attention_maps(model: UnifiedTransformer, images: Tensor, text: Tenso
         patches_per_row = int(sqrt(num_patches))
         pixels_per_row = int(patch_size[0] * patches_per_row)
 
-        colors = generate_colors(text.shape[1])
+        colors = [
+            [168, 56, 50, 255],
+            [62, 168, 50, 255],
+            [50, 139, 168, 255],
+            [255, 247, 28, 255]
+        ]
 
         # then we loop through all data points inside the batch
         for datapointIdx, datapoint in enumerate(text_attention):
@@ -138,10 +135,10 @@ def main() -> None:
     data_module = MnistDataModule(fashion_mnist=FASHION_MNIST == "True")
 
     model = UnifiedTransformer(
-        input_shape=(1, 28, 28),
+        input_shape=(1, 56, 56),
         patch_size=PATCH_SIZE,
-        embed_dim=20,
-        n_heads=2,
+        embed_dim=EMBED_DIM,
+        n_heads=NUM_HEADS,
         output_dim=1,
         learning_rate=LR,
         conv_layers=CONV_LAYERS,
@@ -162,7 +159,7 @@ def main() -> None:
 
     filename = f'saved/{dumps(hyperparams)}.pt'
 
-    model.load_state_dict(load(filename))
+    model.load_state_dict(load(filename, map_location=device('cpu')))
 
     test_loader = data_module.test_dataloader()
 
