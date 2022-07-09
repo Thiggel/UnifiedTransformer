@@ -1,0 +1,6547 @@
+Lmod has detected the following error: These module(s) or extension(s) exist
+but cannot be loaded as requested: "binutils/2.28-GCCcore-6.4.0"
+   Try: "module spider binutils/2.28-GCCcore-6.4.0" to see how to load the
+module(s).
+
+
+
+Starting 5 for hyper parameter setting: 
+Hyper parameters:  {'lr': 0.0001, 'conv_layers': 0, 'dropout': 0.2, 'num_encoder_layers': 8, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 9:08.5 (2.39/s) 
+Loss: 0.66
+|████████████████████████████████████████| 563/563 [100%] in 2:33.2 (3.67/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.635245).  Saving model ...
+Validation loss: 0.64
+Validation accuracy: 63.18%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:52.3 (2.47/s) 
+Loss: 0.55
+|████████████████████████████████████████| 563/563 [100%] in 2:33.3 (3.67/s) 
+
+
+Validating:
+Validation loss decreased (0.635245 --> 0.474609).  Saving model ...
+Validation loss: 0.47
+Validation accuracy: 74.12%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:49.0 (2.48/s) 
+Loss: 0.46
+|████████████████████████████████████████| 563/563 [100%] in 2:30.0 (3.75/s) 
+
+
+Validating:
+Validation loss decreased (0.474609 --> 0.419085).  Saving model ...
+Validation loss: 0.42
+Validation accuracy: 80.05%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:38.3 (2.53/s) 
+Loss: 0.42
+|████████████████████████████████████████| 563/563 [100%] in 2:28.9 (3.78/s) 
+
+
+Validating:
+Validation loss decreased (0.419085 --> 0.402477).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 82.12%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:38.2 (2.53/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 2:27.4 (3.82/s) 
+
+
+Validating:
+Validation loss decreased (0.402477 --> 0.393977).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.43%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:43.4 (2.51/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 2:28.8 (3.78/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.39
+Validation accuracy: 82.33%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:38.6 (2.53/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 2:28.6 (3.79/s) 
+
+
+Validating:
+Validation loss decreased (0.393977 --> 0.388254).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.90%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:40.3 (2.52/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 2:29.1 (3.78/s) 
+
+
+Validating:
+Validation loss decreased (0.388254 --> 0.387783).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.16%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.0 (2.53/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 2:28.1 (3.80/s) 
+
+
+Validating:
+Validation loss decreased (0.387783 --> 0.384558).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.30%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:37.5 (2.54/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 2:28.0 (3.80/s) 
+
+
+Validating:
+Validation loss decreased (0.384558 --> 0.380237).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.77%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.2 (2.53/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 2:27.2 (3.82/s) 
+
+
+Validating:
+Validation loss decreased (0.380237 --> 0.380101).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.25%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:38.6 (2.53/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 2:29.0 (3.78/s) 
+
+
+Validating:
+Validation loss decreased (0.380101 --> 0.372869).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.27%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:37.8 (2.54/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 2:29.8 (3.76/s) 
+
+
+Validating:
+Validation loss decreased (0.372869 --> 0.368975).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.56%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.5 (2.53/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 2:28.3 (3.80/s) 
+
+
+Validating:
+Validation loss decreased (0.368975 --> 0.368845).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.50%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:36.8 (2.54/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 2:28.8 (3.78/s) 
+
+
+Validating:
+Validation loss decreased (0.368845 --> 0.364524).  Saving model ...
+Validation loss: 0.36
+Validation accuracy: 82.50%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 2:28.8 (3.78/s) 
+Test loss: 0.36
+Test accuracy: 82.54%
+
+
+Hyper parameters:  {'lr': 0.0001, 'conv_layers': 0, 'dropout': 0.2, 'num_encoder_layers': 8, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:45.0 (2.50/s) 
+Loss: 0.67
+|████████████████████████████████████████| 563/563 [100%] in 2:28.5 (3.79/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.648465).  Saving model ...
+Validation loss: 0.65
+Validation accuracy: 63.00%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:43.9 (2.51/s) 
+Loss: 0.64
+|████████████████████████████████████████| 563/563 [100%] in 2:27.8 (3.81/s) 
+
+
+Validating:
+Validation loss decreased (0.648465 --> 0.583094).  Saving model ...
+Validation loss: 0.58
+Validation accuracy: 66.29%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:45.1 (2.50/s) 
+Loss: 0.54
+|████████████████████████████████████████| 563/563 [100%] in 2:27.9 (3.81/s) 
+
+
+Validating:
+Validation loss decreased (0.583094 --> 0.472069).  Saving model ...
+Validation loss: 0.47
+Validation accuracy: 75.07%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:41.0 (2.52/s) 
+Loss: 0.47
+|████████████████████████████████████████| 563/563 [100%] in 2:32.3 (3.70/s) 
+
+
+Validating:
+Validation loss decreased (0.472069 --> 0.441681).  Saving model ...
+Validation loss: 0.44
+Validation accuracy: 77.66%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.6 (2.53/s) 
+Loss: 0.45
+|████████████████████████████████████████| 563/563 [100%] in 2:26.4 (3.85/s) 
+
+
+Validating:
+Validation loss decreased (0.441681 --> 0.415863).  Saving model ...
+Validation loss: 0.42
+Validation accuracy: 79.81%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:37.7 (2.54/s) 
+Loss: 0.43
+|████████████████████████████████████████| 563/563 [100%] in 2:28.7 (3.79/s) 
+
+
+Validating:
+Validation loss decreased (0.415863 --> 0.397432).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 81.28%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:36.1 (2.54/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 2:27.6 (3.81/s) 
+
+
+Validating:
+Validation loss decreased (0.397432 --> 0.389120).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.81%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:38.8 (2.53/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 2:28.7 (3.79/s) 
+
+
+Validating:
+Validation loss decreased (0.389120 --> 0.385202).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.68%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.6 (2.53/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 2:29.5 (3.77/s) 
+
+
+Validating:
+Validation loss decreased (0.385202 --> 0.384046).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.52%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:40.1 (2.52/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 2:28.3 (3.80/s) 
+
+
+Validating:
+Validation loss decreased (0.384046 --> 0.380550).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 81.83%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:35.7 (2.55/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 2:27.0 (3.83/s) 
+
+
+Validating:
+Validation loss decreased (0.380550 --> 0.378208).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.12%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.2 (2.53/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 2:29.2 (3.77/s) 
+
+
+Validating:
+Validation loss decreased (0.378208 --> 0.374536).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.56%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:37.4 (2.54/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 2:27.9 (3.81/s) 
+
+
+Validating:
+Validation loss decreased (0.374536 --> 0.367629).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.87%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:37.1 (2.54/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 2:29.5 (3.76/s) 
+
+
+Validating:
+Validation loss decreased (0.367629 --> 0.363511).  Saving model ...
+Validation loss: 0.36
+Validation accuracy: 83.26%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:38.5 (2.53/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 2:27.6 (3.81/s) 
+
+
+Validating:
+Validation loss decreased (0.363511 --> 0.361912).  Saving model ...
+Validation loss: 0.36
+Validation accuracy: 81.86%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 2:27.7 (3.81/s) 
+Test loss: 0.36
+Test accuracy: 82.86%
+
+
+Hyper parameters:  {'lr': 0.0001, 'conv_layers': 0, 'dropout': 0.2, 'num_encoder_layers': 8, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.7 (2.53/s) 
+Loss: 0.67
+|████████████████████████████████████████| 563/563 [100%] in 2:30.0 (3.75/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.648279).  Saving model ...
+Validation loss: 0.65
+Validation accuracy: 63.14%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:44.9 (2.50/s) 
+Loss: 0.61
+|████████████████████████████████████████| 563/563 [100%] in 2:30.7 (3.73/s) 
+
+
+Validating:
+Validation loss decreased (0.648279 --> 0.479132).  Saving model ...
+Validation loss: 0.48
+Validation accuracy: 73.25%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:41.6 (2.52/s) 
+Loss: 0.46
+|████████████████████████████████████████| 563/563 [100%] in 2:27.9 (3.81/s) 
+
+
+Validating:
+Validation loss decreased (0.479132 --> 0.427114).  Saving model ...
+Validation loss: 0.43
+Validation accuracy: 78.60%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:38.1 (2.53/s) 
+Loss: 0.44
+|████████████████████████████████████████| 563/563 [100%] in 2:28.8 (3.78/s) 
+
+
+Validating:
+Validation loss decreased (0.427114 --> 0.414894).  Saving model ...
+Validation loss: 0.41
+Validation accuracy: 80.63%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:37.3 (2.54/s) 
+Loss: 0.43
+|████████████████████████████████████████| 563/563 [100%] in 2:29.0 (3.78/s) 
+
+
+Validating:
+Validation loss decreased (0.414894 --> 0.409802).  Saving model ...
+Validation loss: 0.41
+Validation accuracy: 80.48%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:40.8 (2.52/s) 
+Loss: 0.42
+|████████████████████████████████████████| 563/563 [100%] in 2:30.1 (3.75/s) 
+
+
+Validating:
+Validation loss decreased (0.409802 --> 0.397659).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 82.45%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:42.1 (2.51/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 2:31.7 (3.71/s) 
+
+
+Validating:
+Validation loss decreased (0.397659 --> 0.397046).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 81.90%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:38.4 (2.53/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 2:27.8 (3.81/s) 
+
+
+Validating:
+Validation loss decreased (0.397046 --> 0.389094).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.50%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.1 (2.53/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 2:29.9 (3.76/s) 
+
+
+Validating:
+Validation loss decreased (0.389094 --> 0.387428).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.39%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:40.9 (2.52/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 2:28.1 (3.80/s) 
+
+
+Validating:
+Validation loss decreased (0.387428 --> 0.383187).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.62%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:38.1 (2.53/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 2:29.5 (3.77/s) 
+
+
+Validating:
+Validation loss decreased (0.383187 --> 0.377229).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.65%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:37.3 (2.54/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 2:34.3 (3.65/s) 
+
+
+Validating:
+Validation loss decreased (0.377229 --> 0.376016).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 81.94%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.5 (2.53/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 2:29.1 (3.78/s) 
+
+
+Validating:
+Validation loss decreased (0.376016 --> 0.371850).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.67%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:37.4 (2.54/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 2:28.0 (3.80/s) 
+
+
+Validating:
+Validation loss decreased (0.371850 --> 0.370227).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.13%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:37.5 (2.54/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 2:28.0 (3.80/s) 
+
+
+Validating:
+Validation loss decreased (0.370227 --> 0.365934).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.72%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 2:28.5 (3.79/s) 
+Test loss: 0.36
+Test accuracy: 82.44%
+
+
+Hyper parameters:  {'lr': 0.0001, 'conv_layers': 0, 'dropout': 0.2, 'num_encoder_layers': 8, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:36.5 (2.54/s) 
+Loss: 0.67
+|████████████████████████████████████████| 563/563 [100%] in 2:29.0 (3.78/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.635161).  Saving model ...
+Validation loss: 0.64
+Validation accuracy: 62.89%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:38.5 (2.53/s) 
+Loss: 0.61
+|████████████████████████████████████████| 563/563 [100%] in 2:30.5 (3.74/s) 
+
+
+Validating:
+Validation loss decreased (0.635161 --> 0.521957).  Saving model ...
+Validation loss: 0.52
+Validation accuracy: 70.31%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:38.8 (2.53/s) 
+Loss: 0.49
+|████████████████████████████████████████| 563/563 [100%] in 2:27.8 (3.81/s) 
+
+
+Validating:
+Validation loss decreased (0.521957 --> 0.446146).  Saving model ...
+Validation loss: 0.45
+Validation accuracy: 78.05%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:37.8 (2.54/s) 
+Loss: 0.44
+|████████████████████████████████████████| 563/563 [100%] in 2:27.6 (3.81/s) 
+
+
+Validating:
+Validation loss decreased (0.446146 --> 0.404034).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 80.65%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:42.8 (2.51/s) 
+Loss: 0.42
+|████████████████████████████████████████| 563/563 [100%] in 2:29.5 (3.77/s) 
+
+
+Validating:
+Validation loss decreased (0.404034 --> 0.392522).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.55%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.4 (2.53/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 2:28.2 (3.80/s) 
+
+
+Validating:
+Validation loss decreased (0.392522 --> 0.390293).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.61%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.0 (2.53/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 2:29.3 (3.77/s) 
+
+
+Validating:
+Validation loss decreased (0.390293 --> 0.389548).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.05%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:38.4 (2.53/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 2:29.9 (3.76/s) 
+
+
+Validating:
+Validation loss decreased (0.389548 --> 0.381157).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.65%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:35.9 (2.55/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 2:28.0 (3.80/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.38
+Validation accuracy: 82.01%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:38.7 (2.53/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 2:29.0 (3.78/s) 
+
+
+Validating:
+Validation loss decreased (0.381157 --> 0.377073).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.87%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:38.7 (2.53/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 2:27.4 (3.82/s) 
+
+
+Validating:
+Validation loss decreased (0.377073 --> 0.374905).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.51%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:37.9 (2.54/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 2:29.7 (3.76/s) 
+
+
+Validating:
+Validation loss decreased (0.374905 --> 0.369448).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.08%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.9 (2.53/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 2:29.5 (3.77/s) 
+
+
+Validating:
+Validation loss decreased (0.369448 --> 0.368942).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.68%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:38.0 (2.53/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 2:30.3 (3.75/s) 
+
+
+Validating:
+Validation loss decreased (0.368942 --> 0.366372).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.29%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.6 (2.53/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 2:28.7 (3.79/s) 
+
+
+Validating:
+Validation loss decreased (0.366372 --> 0.364313).  Saving model ...
+Validation loss: 0.36
+Validation accuracy: 82.71%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 2:28.2 (3.80/s) 
+Test loss: 0.36
+Test accuracy: 82.66%
+
+
+Hyper parameters:  {'lr': 0.0001, 'conv_layers': 0, 'dropout': 0.2, 'num_encoder_layers': 8, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:38.6 (2.53/s) 
+Loss: 0.66
+|████████████████████████████████████████| 563/563 [100%] in 2:28.6 (3.79/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.650234).  Saving model ...
+Validation loss: 0.65
+Validation accuracy: 62.86%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.3 (2.53/s) 
+Loss: 0.66
+|████████████████████████████████████████| 563/563 [100%] in 2:30.7 (3.74/s) 
+
+
+Validating:
+Validation loss decreased (0.650234 --> 0.638649).  Saving model ...
+Validation loss: 0.64
+Validation accuracy: 62.89%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:41.3 (2.52/s) 
+Loss: 0.58
+|████████████████████████████████████████| 563/563 [100%] in 2:33.6 (3.66/s) 
+
+
+Validating:
+Validation loss decreased (0.638649 --> 0.487979).  Saving model ...
+Validation loss: 0.49
+Validation accuracy: 73.16%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.2 (2.53/s) 
+Loss: 0.47
+|████████████████████████████████████████| 563/563 [100%] in 2:28.6 (3.79/s) 
+
+
+Validating:
+Validation loss decreased (0.487979 --> 0.430364).  Saving model ...
+Validation loss: 0.43
+Validation accuracy: 79.02%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:38.0 (2.53/s) 
+Loss: 0.43
+|████████████████████████████████████████| 563/563 [100%] in 2:31.1 (3.73/s) 
+
+
+Validating:
+Validation loss decreased (0.430364 --> 0.400211).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 81.62%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:28.4 (2.58/s) 
+Loss: 0.42
+|████████████████████████████████████████| 563/563 [100%] in 2:33.5 (3.67/s) 
+
+
+Validating:
+Validation loss decreased (0.400211 --> 0.390814).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.10%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:41.5 (2.52/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 2:29.9 (3.75/s) 
+
+
+Validating:
+Validation loss decreased (0.390814 --> 0.390026).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.09%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:42.4 (2.51/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 2:30.0 (3.75/s) 
+
+
+Validating:
+Validation loss decreased (0.390026 --> 0.389349).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.57%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:41.1 (2.52/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 2:30.1 (3.75/s) 
+
+
+Validating:
+Validation loss decreased (0.389349 --> 0.384225).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.42%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:40.5 (2.52/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 2:29.8 (3.76/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.39
+Validation accuracy: 81.86%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.2 (2.53/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 2:30.5 (3.74/s) 
+
+
+Validating:
+Validation loss decreased (0.384225 --> 0.383542).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.08%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:41.0 (2.52/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 2:31.2 (3.72/s) 
+
+
+Validating:
+Validation loss decreased (0.383542 --> 0.376067).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.87%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:44.0 (2.51/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 2:30.0 (3.75/s) 
+
+
+Validating:
+Validation loss decreased (0.376067 --> 0.374657).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.50%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:41.1 (2.52/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 2:28.6 (3.79/s) 
+
+
+Validating:
+Validation loss decreased (0.374657 --> 0.369267).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 83.22%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:42.5 (2.51/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 2:30.9 (3.73/s) 
+
+
+Validating:
+Validation loss decreased (0.369267 --> 0.368665).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 83.01%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 2:30.8 (3.73/s) 
+Test loss: 0.37
+Test accuracy: 82.87%
+
+
+Done with 5 runs!
+
+
+
+Starting 5 for hyper parameter setting: 
+Hyper parameters:  {'lr': 0.01, 'conv_layers': 0, 'dropout': 0.1, 'num_encoder_layers': 2, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:30.9 (6.23/s) 
+Loss: 0.37
+|████████████████████████████████████████| 563/563 [100%] in 48.9s (11.52/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.301291).  Saving model ...
+Validation loss: 0.30
+Validation accuracy: 84.35%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:33.4 (6.15/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 48.4s (11.63/s) 
+
+
+Validating:
+Validation loss decreased (0.301291 --> 0.271299).  Saving model ...
+Validation loss: 0.27
+Validation accuracy: 84.84%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.4 (6.10/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.74/s) 
+
+
+Validating:
+Validation loss decreased (0.271299 --> 0.255861).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 86.27%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.3 (6.10/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 48.1s (11.71/s) 
+
+
+Validating:
+Validation loss decreased (0.255861 --> 0.249390).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 86.70%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.8 (6.08/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 47.8s (11.78/s) 
+
+
+Validating:
+Validation loss decreased (0.249390 --> 0.239740).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 86.88%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:33.6 (6.15/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 48.2s (11.69/s) 
+
+
+Validating:
+Validation loss decreased (0.239740 --> 0.239164).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 86.88%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.7 (6.09/s) 
+Loss: 0.24
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.73/s) 
+
+
+Validating:
+Validation loss decreased (0.239164 --> 0.237760).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 87.00%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.2 (6.07/s) 
+Loss: 0.24
+|████████████████████████████████████████| 563/563 [100%] in 48.4s (11.62/s) 
+
+
+Validating:
+Validation loss decreased (0.237760 --> 0.232226).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 86.94%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.2 (6.13/s) 
+Loss: 0.24
+|████████████████████████████████████████| 563/563 [100%] in 48.6s (11.58/s) 
+
+
+Validating:
+Validation loss decreased (0.232226 --> 0.229547).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 87.09%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.2 (6.10/s) 
+Loss: 0.24
+|████████████████████████████████████████| 563/563 [100%] in 48.2s (11.68/s) 
+
+
+Validating:
+Validation loss decreased (0.229547 --> 0.225330).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 87.56%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:33.9 (6.14/s) 
+Loss: 0.23
+|████████████████████████████████████████| 563/563 [100%] in 47.8s (11.78/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.23
+Validation accuracy: 87.62%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.1 (6.13/s) 
+Loss: 0.23
+|████████████████████████████████████████| 563/563 [100%] in 48.1s (11.70/s) 
+
+
+Validating:
+Validation loss decreased (0.225330 --> 0.224151).  Saving model ...
+Validation loss: 0.22
+Validation accuracy: 87.46%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.3 (6.10/s) 
+Loss: 0.23
+|████████████████████████████████████████| 563/563 [100%] in 47.8s (11.79/s) 
+
+
+Validating:
+Validation loss decreased (0.224151 --> 0.217520).  Saving model ...
+Validation loss: 0.22
+Validation accuracy: 88.06%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.6 (6.09/s) 
+Loss: 0.23
+|████████████████████████████████████████| 563/563 [100%] in 48.3s (11.65/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.22
+Validation accuracy: 88.02%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:39.5 (5.98/s) 
+Loss: 0.23
+|████████████████████████████████████████| 563/563 [100%] in 52.2s (10.78/s) 
+
+
+Validating:
+EarlyStopping counter: 2 out of 3
+Validation loss: 0.22
+Validation accuracy: 87.60%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 49.0s (11.48/s) 
+Test loss: 0.22
+Test accuracy: 87.81%
+
+
+Hyper parameters:  {'lr': 0.01, 'conv_layers': 0, 'dropout': 0.1, 'num_encoder_layers': 2, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.7 (6.09/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 47.5s (11.84/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.312397).  Saving model ...
+Validation loss: 0.31
+Validation accuracy: 83.28%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.7 (6.09/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.72/s) 
+
+
+Validating:
+Validation loss decreased (0.312397 --> 0.274251).  Saving model ...
+Validation loss: 0.27
+Validation accuracy: 85.84%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:33.8 (6.14/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 47.6s (11.84/s) 
+
+
+Validating:
+Validation loss decreased (0.274251 --> 0.262442).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 86.50%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.5 (6.12/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 48.4s (11.63/s) 
+
+
+Validating:
+Validation loss decreased (0.262442 --> 0.252139).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 86.32%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.4 (6.10/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 47.8s (11.78/s) 
+
+
+Validating:
+Validation loss decreased (0.252139 --> 0.244396).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 86.55%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.7 (6.09/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.74/s) 
+
+
+Validating:
+Validation loss decreased (0.244396 --> 0.241231).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 86.66%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.8 (6.11/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 48.1s (11.70/s) 
+
+
+Validating:
+Validation loss decreased (0.241231 --> 0.233966).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 87.39%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.5 (6.12/s) 
+Loss: 0.24
+|████████████████████████████████████████| 563/563 [100%] in 48.4s (11.63/s) 
+
+
+Validating:
+Validation loss decreased (0.233966 --> 0.233145).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 87.41%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.5 (6.12/s) 
+Loss: 0.24
+|████████████████████████████████████████| 563/563 [100%] in 48.2s (11.68/s) 
+
+
+Validating:
+Validation loss decreased (0.233145 --> 0.232714).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 87.06%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.1 (6.13/s) 
+Loss: 0.24
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.76/s) 
+
+
+Validating:
+Validation loss decreased (0.232714 --> 0.228870).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 87.40%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:28.5 (6.30/s) 
+Loss: 0.24
+|████████████████████████████████████████| 563/563 [100%] in 48.3s (11.66/s) 
+
+
+Validating:
+Validation loss decreased (0.228870 --> 0.223901).  Saving model ...
+Validation loss: 0.22
+Validation accuracy: 87.69%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.7 (6.12/s) 
+Loss: 0.23
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.76/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.23
+Validation accuracy: 87.37%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:33.7 (6.14/s) 
+Loss: 0.23
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.74/s) 
+
+
+Validating:
+EarlyStopping counter: 2 out of 3
+Validation loss: 0.23
+Validation accuracy: 87.46%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.0 (6.08/s) 
+Loss: 0.23
+|████████████████████████████████████████| 563/563 [100%] in 48.4s (11.64/s) 
+
+
+Validating:
+EarlyStopping counter: 3 out of 3
+Validation loss: 0.22
+Validation accuracy: 87.53%
+
+
+Early stopping
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.74/s) 
+Test loss: 0.23
+Test accuracy: 87.71%
+
+
+Hyper parameters:  {'lr': 0.01, 'conv_layers': 0, 'dropout': 0.1, 'num_encoder_layers': 2, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:37.1 (6.05/s) 
+Loss: 0.37
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.75/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.296925).  Saving model ...
+Validation loss: 0.30
+Validation accuracy: 84.46%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.6 (6.12/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 48.3s (11.65/s) 
+
+
+Validating:
+Validation loss decreased (0.296925 --> 0.278521).  Saving model ...
+Validation loss: 0.28
+Validation accuracy: 85.57%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.4 (6.13/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 48.2s (11.68/s) 
+
+
+Validating:
+Validation loss decreased (0.278521 --> 0.255311).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 86.20%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.9 (6.08/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 48.2s (11.68/s) 
+
+
+Validating:
+Validation loss decreased (0.255311 --> 0.249467).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 86.64%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:37.2 (6.04/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 48.6s (11.59/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.25
+Validation accuracy: 86.46%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:31.5 (6.21/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 47.2s (11.93/s) 
+
+
+Validating:
+Validation loss decreased (0.249467 --> 0.245510).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 87.03%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:33.6 (6.15/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 47.7s (11.80/s) 
+
+
+Validating:
+Validation loss decreased (0.245510 --> 0.240222).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 87.05%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.0 (6.13/s) 
+Loss: 0.24
+|████████████████████████████████████████| 563/563 [100%] in 48.1s (11.70/s) 
+
+
+Validating:
+Validation loss decreased (0.240222 --> 0.232737).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 87.03%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.6 (6.12/s) 
+Loss: 0.24
+|████████████████████████████████████████| 563/563 [100%] in 47.6s (11.82/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.24
+Validation accuracy: 87.51%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.2 (6.13/s) 
+Loss: 0.24
+|████████████████████████████████████████| 563/563 [100%] in 48.3s (11.65/s) 
+
+
+Validating:
+Validation loss decreased (0.232737 --> 0.232134).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 87.57%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.9 (6.11/s) 
+Loss: 0.24
+|████████████████████████████████████████| 563/563 [100%] in 47.5s (11.86/s) 
+
+
+Validating:
+Validation loss decreased (0.232134 --> 0.229945).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 87.94%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.7 (6.12/s) 
+Loss: 0.23
+|████████████████████████████████████████| 563/563 [100%] in 47.8s (11.78/s) 
+
+
+Validating:
+Validation loss decreased (0.229945 --> 0.226405).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 87.69%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.3 (6.13/s) 
+Loss: 0.23
+|████████████████████████████████████████| 563/563 [100%] in 48.3s (11.66/s) 
+
+
+Validating:
+Validation loss decreased (0.226405 --> 0.221721).  Saving model ...
+Validation loss: 0.22
+Validation accuracy: 88.02%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.2 (6.10/s) 
+Loss: 0.23
+|████████████████████████████████████████| 563/563 [100%] in 48.5s (11.60/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.22
+Validation accuracy: 88.10%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.0 (6.13/s) 
+Loss: 0.23
+|████████████████████████████████████████| 563/563 [100%] in 47.6s (11.82/s) 
+
+
+Validating:
+Validation loss decreased (0.221721 --> 0.216806).  Saving model ...
+Validation loss: 0.22
+Validation accuracy: 88.17%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 48.6s (11.60/s) 
+Test loss: 0.22
+Test accuracy: 88.43%
+
+
+Hyper parameters:  {'lr': 0.01, 'conv_layers': 0, 'dropout': 0.1, 'num_encoder_layers': 2, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.5 (6.12/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 48.4s (11.63/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.309594).  Saving model ...
+Validation loss: 0.31
+Validation accuracy: 83.56%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.7 (6.11/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 48.2s (11.67/s) 
+
+
+Validating:
+Validation loss decreased (0.309594 --> 0.283859).  Saving model ...
+Validation loss: 0.28
+Validation accuracy: 84.88%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.5 (6.09/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.73/s) 
+
+
+Validating:
+Validation loss decreased (0.283859 --> 0.257381).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 86.01%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.7 (6.12/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.74/s) 
+
+
+Validating:
+Validation loss decreased (0.257381 --> 0.245713).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 86.32%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.2 (6.13/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 47.7s (11.80/s) 
+
+
+Validating:
+Validation loss decreased (0.245713 --> 0.242728).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 86.65%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.7 (6.09/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 48.9s (11.52/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.24
+Validation accuracy: 86.93%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.0 (6.11/s) 
+Loss: 0.24
+|████████████████████████████████████████| 563/563 [100%] in 48.4s (11.62/s) 
+
+
+Validating:
+Validation loss decreased (0.242728 --> 0.236958).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 87.06%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.1 (6.11/s) 
+Loss: 0.24
+|████████████████████████████████████████| 563/563 [100%] in 48.2s (11.67/s) 
+
+
+Validating:
+Validation loss decreased (0.236958 --> 0.234619).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 87.33%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.0 (6.14/s) 
+Loss: 0.24
+|████████████████████████████████████████| 563/563 [100%] in 48.6s (11.58/s) 
+
+
+Validating:
+Validation loss decreased (0.234619 --> 0.227427).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 86.95%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.4 (6.12/s) 
+Loss: 0.24
+|████████████████████████████████████████| 563/563 [100%] in 48.1s (11.70/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.23
+Validation accuracy: 87.32%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.2 (6.10/s) 
+Loss: 0.24
+|████████████████████████████████████████| 563/563 [100%] in 48.5s (11.62/s) 
+
+
+Validating:
+EarlyStopping counter: 2 out of 3
+Validation loss: 0.23
+Validation accuracy: 87.31%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.5 (6.12/s) 
+Loss: 0.23
+|████████████████████████████████████████| 563/563 [100%] in 48.9s (11.52/s) 
+
+
+Validating:
+Validation loss decreased (0.227427 --> 0.225334).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 87.30%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.9 (6.11/s) 
+Loss: 0.23
+|████████████████████████████████████████| 563/563 [100%] in 48.7s (11.56/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.23
+Validation accuracy: 87.47%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.1 (6.13/s) 
+Loss: 0.23
+|████████████████████████████████████████| 563/563 [100%] in 48.1s (11.70/s) 
+
+
+Validating:
+EarlyStopping counter: 2 out of 3
+Validation loss: 0.23
+Validation accuracy: 87.30%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.1 (6.10/s) 
+Loss: 0.23
+|████████████████████████████████████████| 563/563 [100%] in 49.7s (11.33/s) 
+
+
+Validating:
+Validation loss decreased (0.225334 --> 0.225022).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 87.63%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 48.2s (11.67/s) 
+Test loss: 0.23
+Test accuracy: 87.55%
+
+
+Hyper parameters:  {'lr': 0.01, 'conv_layers': 0, 'dropout': 0.1, 'num_encoder_layers': 2, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.1 (6.10/s) 
+Loss: 0.37
+|████████████████████████████████████████| 563/563 [100%] in 47.6s (11.82/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.299637).  Saving model ...
+Validation loss: 0.30
+Validation accuracy: 84.60%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.5 (6.12/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 49.6s (11.35/s) 
+
+
+Validating:
+Validation loss decreased (0.299637 --> 0.266286).  Saving model ...
+Validation loss: 0.27
+Validation accuracy: 85.60%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.6 (6.12/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 47.6s (11.82/s) 
+
+
+Validating:
+Validation loss decreased (0.266286 --> 0.256883).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 85.81%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.6 (6.12/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 48.3s (11.65/s) 
+
+
+Validating:
+Validation loss decreased (0.256883 --> 0.248826).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 86.51%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:33.9 (6.14/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 47.7s (11.80/s) 
+
+
+Validating:
+Validation loss decreased (0.248826 --> 0.244504).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 86.57%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.3 (6.13/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 47.1s (11.95/s) 
+
+
+Validating:
+Validation loss decreased (0.244504 --> 0.235712).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 86.83%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.6 (6.09/s) 
+Loss: 0.24
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.74/s) 
+
+
+Validating:
+Validation loss decreased (0.235712 --> 0.231987).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 86.94%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:33.9 (6.14/s) 
+Loss: 0.24
+|████████████████████████████████████████| 563/563 [100%] in 49.7s (11.33/s) 
+
+
+Validating:
+Validation loss decreased (0.231987 --> 0.231633).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 86.84%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.7 (6.09/s) 
+Loss: 0.24
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.75/s) 
+
+
+Validating:
+Validation loss decreased (0.231633 --> 0.231163).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 87.33%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.5 (6.12/s) 
+Loss: 0.24
+|████████████████████████████████████████| 563/563 [100%] in 47.4s (11.89/s) 
+
+
+Validating:
+Validation loss decreased (0.231163 --> 0.230287).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 87.35%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.8 (6.11/s) 
+Loss: 0.24
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.76/s) 
+
+
+Validating:
+Validation loss decreased (0.230287 --> 0.226060).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 87.32%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:33.0 (6.16/s) 
+Loss: 0.23
+|████████████████████████████████████████| 563/563 [100%] in 48.4s (11.64/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.23
+Validation accuracy: 86.91%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:33.9 (6.14/s) 
+Loss: 0.23
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.73/s) 
+
+
+Validating:
+Validation loss decreased (0.226060 --> 0.225393).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 87.37%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:33.8 (6.14/s) 
+Loss: 0.23
+|████████████████████████████████████████| 563/563 [100%] in 47.6s (11.83/s) 
+
+
+Validating:
+Validation loss decreased (0.225393 --> 0.221090).  Saving model ...
+Validation loss: 0.22
+Validation accuracy: 87.60%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:37.7 (6.03/s) 
+Loss: 0.23
+|████████████████████████████████████████| 563/563 [100%] in 52.0s (10.83/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.23
+Validation accuracy: 87.10%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.73/s) 
+Test loss: 0.22
+Test accuracy: 87.65%
+
+
+Done with 5 runs!
+
+
+
+Starting 5 for hyper parameter setting: 
+Hyper parameters:  {'lr': 0.001, 'conv_layers': 0, 'dropout': 0.2, 'num_encoder_layers': 8, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:42.8 (2.51/s) 
+Loss: 0.48
+|████████████████████████████████████████| 563/563 [100%] in 2:30.6 (3.74/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.393802).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 81.62%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:40.8 (2.52/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 2:30.4 (3.74/s) 
+
+
+Validating:
+Validation loss decreased (0.393802 --> 0.366011).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.83%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:41.2 (2.52/s) 
+Loss: 0.36
+|████████████████████████████████████████| 563/563 [100%] in 2:29.8 (3.76/s) 
+
+
+Validating:
+Validation loss decreased (0.366011 --> 0.338931).  Saving model ...
+Validation loss: 0.34
+Validation accuracy: 83.47%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:44.5 (2.50/s) 
+Loss: 0.35
+|████████████████████████████████████████| 563/563 [100%] in 2:30.0 (3.75/s) 
+
+
+Validating:
+Validation loss decreased (0.338931 --> 0.320095).  Saving model ...
+Validation loss: 0.32
+Validation accuracy: 83.93%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:41.5 (2.52/s) 
+Loss: 0.33
+|████████████████████████████████████████| 563/563 [100%] in 2:29.7 (3.76/s) 
+
+
+Validating:
+Validation loss decreased (0.320095 --> 0.309243).  Saving model ...
+Validation loss: 0.31
+Validation accuracy: 83.90%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:42.4 (2.51/s) 
+Loss: 0.32
+|████████████████████████████████████████| 563/563 [100%] in 2:31.5 (3.72/s) 
+
+
+Validating:
+Validation loss decreased (0.309243 --> 0.303755).  Saving model ...
+Validation loss: 0.30
+Validation accuracy: 85.04%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:42.7 (2.51/s) 
+Loss: 0.31
+|████████████████████████████████████████| 563/563 [100%] in 2:30.2 (3.75/s) 
+
+
+Validating:
+Validation loss decreased (0.303755 --> 0.288724).  Saving model ...
+Validation loss: 0.29
+Validation accuracy: 85.62%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:42.0 (2.52/s) 
+Loss: 0.30
+|████████████████████████████████████████| 563/563 [100%] in 2:29.8 (3.76/s) 
+
+
+Validating:
+Validation loss decreased (0.288724 --> 0.277410).  Saving model ...
+Validation loss: 0.28
+Validation accuracy: 85.84%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:41.6 (2.52/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 2:30.8 (3.73/s) 
+
+
+Validating:
+Validation loss decreased (0.277410 --> 0.269602).  Saving model ...
+Validation loss: 0.27
+Validation accuracy: 86.83%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:43.0 (2.51/s) 
+Loss: 0.28
+|████████████████████████████████████████| 563/563 [100%] in 2:31.2 (3.72/s) 
+
+
+Validating:
+Validation loss decreased (0.269602 --> 0.269305).  Saving model ...
+Validation loss: 0.27
+Validation accuracy: 86.86%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.0 (2.53/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 2:30.7 (3.73/s) 
+
+
+Validating:
+Validation loss decreased (0.269305 --> 0.257562).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 88.00%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:42.6 (2.51/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 2:30.9 (3.73/s) 
+
+
+Validating:
+Validation loss decreased (0.257562 --> 0.249510).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 87.60%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:40.6 (2.52/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 2:29.0 (3.78/s) 
+
+
+Validating:
+Validation loss decreased (0.249510 --> 0.245756).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 88.34%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:41.3 (2.52/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 2:29.3 (3.77/s) 
+
+
+Validating:
+Validation loss decreased (0.245756 --> 0.245045).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 89.11%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:41.5 (2.52/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 2:30.6 (3.74/s) 
+
+
+Validating:
+Validation loss decreased (0.245045 --> 0.235259).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 89.95%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 2:29.1 (3.78/s) 
+Test loss: 0.23
+Test accuracy: 89.25%
+
+
+Hyper parameters:  {'lr': 0.001, 'conv_layers': 0, 'dropout': 0.2, 'num_encoder_layers': 8, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:40.6 (2.52/s) 
+Loss: 0.47
+|████████████████████████████████████████| 563/563 [100%] in 2:31.5 (3.72/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.398033).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 82.34%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:41.9 (2.52/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 2:28.6 (3.79/s) 
+
+
+Validating:
+Validation loss decreased (0.398033 --> 0.377932).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.66%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:42.4 (2.51/s) 
+Loss: 0.37
+|████████████████████████████████████████| 563/563 [100%] in 2:30.5 (3.74/s) 
+
+
+Validating:
+Validation loss decreased (0.377932 --> 0.342739).  Saving model ...
+Validation loss: 0.34
+Validation accuracy: 82.77%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:40.4 (2.52/s) 
+Loss: 0.34
+|████████████████████████████████████████| 563/563 [100%] in 2:31.2 (3.72/s) 
+
+
+Validating:
+Validation loss decreased (0.342739 --> 0.316098).  Saving model ...
+Validation loss: 0.32
+Validation accuracy: 84.02%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.6 (2.53/s) 
+Loss: 0.32
+|████████████████████████████████████████| 563/563 [100%] in 2:30.1 (3.75/s) 
+
+
+Validating:
+Validation loss decreased (0.316098 --> 0.305750).  Saving model ...
+Validation loss: 0.31
+Validation accuracy: 84.64%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:42.5 (2.51/s) 
+Loss: 0.31
+|████████████████████████████████████████| 563/563 [100%] in 2:33.9 (3.66/s) 
+
+
+Validating:
+Validation loss decreased (0.305750 --> 0.293112).  Saving model ...
+Validation loss: 0.29
+Validation accuracy: 84.78%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:43.2 (2.51/s) 
+Loss: 0.30
+|████████████████████████████████████████| 563/563 [100%] in 2:28.4 (3.79/s) 
+
+
+Validating:
+Validation loss decreased (0.293112 --> 0.282953).  Saving model ...
+Validation loss: 0.28
+Validation accuracy: 85.37%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:41.9 (2.52/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 2:29.0 (3.78/s) 
+
+
+Validating:
+Validation loss decreased (0.282953 --> 0.274386).  Saving model ...
+Validation loss: 0.27
+Validation accuracy: 85.83%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.0 (2.53/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 2:30.3 (3.75/s) 
+
+
+Validating:
+Validation loss decreased (0.274386 --> 0.269692).  Saving model ...
+Validation loss: 0.27
+Validation accuracy: 86.70%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:38.7 (2.53/s) 
+Loss: 0.28
+|████████████████████████████████████████| 563/563 [100%] in 2:27.9 (3.81/s) 
+
+
+Validating:
+Validation loss decreased (0.269692 --> 0.263511).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 86.45%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:40.4 (2.52/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 2:29.6 (3.76/s) 
+
+
+Validating:
+Validation loss decreased (0.263511 --> 0.255828).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 86.96%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.5 (2.53/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 2:37.1 (3.58/s) 
+
+
+Validating:
+Validation loss decreased (0.255828 --> 0.251950).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 87.54%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:43.1 (2.51/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 2:31.0 (3.73/s) 
+
+
+Validating:
+Validation loss decreased (0.251950 --> 0.243294).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 88.40%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:38.4 (2.53/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 2:29.5 (3.77/s) 
+
+
+Validating:
+Validation loss decreased (0.243294 --> 0.235210).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 88.91%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:41.8 (2.52/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 2:29.9 (3.76/s) 
+
+
+Validating:
+Validation loss decreased (0.235210 --> 0.226786).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 89.82%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 2:30.4 (3.74/s) 
+Test loss: 0.23
+Test accuracy: 89.74%
+
+
+Hyper parameters:  {'lr': 0.001, 'conv_layers': 0, 'dropout': 0.2, 'num_encoder_layers': 8, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:40.4 (2.52/s) 
+Loss: 0.47
+|████████████████████████████████████████| 563/563 [100%] in 2:28.6 (3.79/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.387519).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.26%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:40.7 (2.52/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 2:28.2 (3.80/s) 
+
+
+Validating:
+Validation loss decreased (0.387519 --> 0.368067).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.23%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.0 (2.53/s) 
+Loss: 0.37
+|████████████████████████████████████████| 563/563 [100%] in 2:27.9 (3.81/s) 
+
+
+Validating:
+Validation loss decreased (0.368067 --> 0.336930).  Saving model ...
+Validation loss: 0.34
+Validation accuracy: 83.32%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:40.3 (2.52/s) 
+Loss: 0.34
+|████████████████████████████████████████| 563/563 [100%] in 2:27.9 (3.81/s) 
+
+
+Validating:
+Validation loss decreased (0.336930 --> 0.311646).  Saving model ...
+Validation loss: 0.31
+Validation accuracy: 84.05%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.7 (2.53/s) 
+Loss: 0.32
+|████████████████████████████████████████| 563/563 [100%] in 2:27.9 (3.81/s) 
+
+
+Validating:
+Validation loss decreased (0.311646 --> 0.298106).  Saving model ...
+Validation loss: 0.30
+Validation accuracy: 84.57%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:42.4 (2.51/s) 
+Loss: 0.31
+|████████████████████████████████████████| 563/563 [100%] in 2:29.1 (3.78/s) 
+
+
+Validating:
+Validation loss decreased (0.298106 --> 0.292405).  Saving model ...
+Validation loss: 0.29
+Validation accuracy: 84.86%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.0 (2.53/s) 
+Loss: 0.30
+|████████████████████████████████████████| 563/563 [100%] in 2:29.9 (3.75/s) 
+
+
+Validating:
+Validation loss decreased (0.292405 --> 0.280363).  Saving model ...
+Validation loss: 0.28
+Validation accuracy: 85.50%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:40.6 (2.52/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 2:28.7 (3.79/s) 
+
+
+Validating:
+Validation loss decreased (0.280363 --> 0.276995).  Saving model ...
+Validation loss: 0.28
+Validation accuracy: 85.74%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:42.6 (2.51/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 2:29.1 (3.78/s) 
+
+
+Validating:
+Validation loss decreased (0.276995 --> 0.272496).  Saving model ...
+Validation loss: 0.27
+Validation accuracy: 85.78%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:43.6 (2.51/s) 
+Loss: 0.28
+|████████████████████████████████████████| 563/563 [100%] in 2:29.0 (3.78/s) 
+
+
+Validating:
+Validation loss decreased (0.272496 --> 0.268265).  Saving model ...
+Validation loss: 0.27
+Validation accuracy: 86.72%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:38.7 (2.53/s) 
+Loss: 0.28
+|████████████████████████████████████████| 563/563 [100%] in 2:28.4 (3.79/s) 
+
+
+Validating:
+Validation loss decreased (0.268265 --> 0.258126).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 87.06%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.5 (2.53/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 2:35.1 (3.63/s) 
+
+
+Validating:
+Validation loss decreased (0.258126 --> 0.250554).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 87.71%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:42.5 (2.51/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 2:27.4 (3.82/s) 
+
+
+Validating:
+Validation loss decreased (0.250554 --> 0.241446).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 88.39%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:38.8 (2.53/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 2:27.7 (3.81/s) 
+
+
+Validating:
+Validation loss decreased (0.241446 --> 0.233700).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 89.61%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:38.8 (2.53/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 2:28.8 (3.78/s) 
+
+
+Validating:
+Validation loss decreased (0.233700 --> 0.231853).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 89.29%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 2:27.7 (3.81/s) 
+Test loss: 0.23
+Test accuracy: 89.58%
+
+
+Hyper parameters:  {'lr': 0.001, 'conv_layers': 0, 'dropout': 0.2, 'num_encoder_layers': 8, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:40.2 (2.52/s) 
+Loss: 0.49
+|████████████████████████████████████████| 563/563 [100%] in 2:29.7 (3.76/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.391843).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 81.28%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.9 (2.53/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 2:29.1 (3.78/s) 
+
+
+Validating:
+Validation loss decreased (0.391843 --> 0.369801).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.65%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:41.2 (2.52/s) 
+Loss: 0.37
+|████████████████████████████████████████| 563/563 [100%] in 2:28.7 (3.79/s) 
+
+
+Validating:
+Validation loss decreased (0.369801 --> 0.354087).  Saving model ...
+Validation loss: 0.35
+Validation accuracy: 82.42%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:40.4 (2.52/s) 
+Loss: 0.35
+|████████████████████████████████████████| 563/563 [100%] in 2:29.1 (3.78/s) 
+
+
+Validating:
+Validation loss decreased (0.354087 --> 0.327462).  Saving model ...
+Validation loss: 0.33
+Validation accuracy: 83.53%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:40.5 (2.52/s) 
+Loss: 0.33
+|████████████████████████████████████████| 563/563 [100%] in 2:28.6 (3.79/s) 
+
+
+Validating:
+Validation loss decreased (0.327462 --> 0.313512).  Saving model ...
+Validation loss: 0.31
+Validation accuracy: 83.94%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.6 (2.53/s) 
+Loss: 0.32
+|████████████████████████████████████████| 563/563 [100%] in 2:31.9 (3.71/s) 
+
+
+Validating:
+Validation loss decreased (0.313512 --> 0.304101).  Saving model ...
+Validation loss: 0.30
+Validation accuracy: 84.33%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:42.0 (2.52/s) 
+Loss: 0.31
+|████████████████████████████████████████| 563/563 [100%] in 2:29.5 (3.76/s) 
+
+
+Validating:
+Validation loss decreased (0.304101 --> 0.295781).  Saving model ...
+Validation loss: 0.30
+Validation accuracy: 84.81%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:40.4 (2.52/s) 
+Loss: 0.30
+|████████████████████████████████████████| 563/563 [100%] in 2:29.4 (3.77/s) 
+
+
+Validating:
+Validation loss decreased (0.295781 --> 0.284317).  Saving model ...
+Validation loss: 0.28
+Validation accuracy: 85.63%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:41.7 (2.52/s) 
+Loss: 0.30
+|████████████████████████████████████████| 563/563 [100%] in 2:29.0 (3.78/s) 
+
+
+Validating:
+Validation loss decreased (0.284317 --> 0.280177).  Saving model ...
+Validation loss: 0.28
+Validation accuracy: 86.24%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:43.9 (2.51/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 2:31.6 (3.71/s) 
+
+
+Validating:
+Validation loss decreased (0.280177 --> 0.273493).  Saving model ...
+Validation loss: 0.27
+Validation accuracy: 86.54%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:48.3 (2.49/s) 
+Loss: 0.28
+|████████████████████████████████████████| 563/563 [100%] in 2:31.3 (3.72/s) 
+
+
+Validating:
+Validation loss decreased (0.273493 --> 0.264545).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 86.88%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:50.8 (2.47/s) 
+Loss: 0.28
+|████████████████████████████████████████| 563/563 [100%] in 2:34.1 (3.65/s) 
+
+
+Validating:
+Validation loss decreased (0.264545 --> 0.259019).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 87.43%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:49.8 (2.48/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 2:29.9 (3.76/s) 
+
+
+Validating:
+Validation loss decreased (0.259019 --> 0.250989).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 87.31%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:48.8 (2.48/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 2:30.5 (3.74/s) 
+
+
+Validating:
+Validation loss decreased (0.250989 --> 0.248414).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 87.77%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:46.7 (2.49/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 2:31.5 (3.72/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.25
+Validation accuracy: 88.25%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 2:31.0 (3.73/s) 
+Test loss: 0.25
+Test accuracy: 88.42%
+
+
+Hyper parameters:  {'lr': 0.001, 'conv_layers': 0, 'dropout': 0.2, 'num_encoder_layers': 8, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:47.0 (2.49/s) 
+Loss: 0.48
+|████████████████████████████████████████| 563/563 [100%] in 2:31.6 (3.71/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.390581).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.30%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:47.8 (2.49/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 2:27.9 (3.81/s) 
+
+
+Validating:
+Validation loss decreased (0.390581 --> 0.353948).  Saving model ...
+Validation loss: 0.35
+Validation accuracy: 82.51%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:42.4 (2.51/s) 
+Loss: 0.36
+|████████████████████████████████████████| 563/563 [100%] in 2:27.6 (3.81/s) 
+
+
+Validating:
+Validation loss decreased (0.353948 --> 0.330958).  Saving model ...
+Validation loss: 0.33
+Validation accuracy: 83.96%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:42.4 (2.51/s) 
+Loss: 0.34
+|████████████████████████████████████████| 563/563 [100%] in 2:30.4 (3.74/s) 
+
+
+Validating:
+Validation loss decreased (0.330958 --> 0.314702).  Saving model ...
+Validation loss: 0.31
+Validation accuracy: 83.62%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.2 (2.53/s) 
+Loss: 0.32
+|████████████████████████████████████████| 563/563 [100%] in 2:31.2 (3.72/s) 
+
+
+Validating:
+Validation loss decreased (0.314702 --> 0.302217).  Saving model ...
+Validation loss: 0.30
+Validation accuracy: 84.35%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:42.2 (2.51/s) 
+Loss: 0.31
+|████████████████████████████████████████| 563/563 [100%] in 2:32.8 (3.69/s) 
+
+
+Validating:
+Validation loss decreased (0.302217 --> 0.291875).  Saving model ...
+Validation loss: 0.29
+Validation accuracy: 85.37%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:42.9 (2.51/s) 
+Loss: 0.30
+|████████████████████████████████████████| 563/563 [100%] in 2:30.1 (3.75/s) 
+
+
+Validating:
+Validation loss decreased (0.291875 --> 0.285347).  Saving model ...
+Validation loss: 0.29
+Validation accuracy: 86.04%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:40.1 (2.52/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 2:29.6 (3.76/s) 
+
+
+Validating:
+Validation loss decreased (0.285347 --> 0.269278).  Saving model ...
+Validation loss: 0.27
+Validation accuracy: 87.19%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:40.9 (2.52/s) 
+Loss: 0.28
+|████████████████████████████████████████| 563/563 [100%] in 2:29.9 (3.76/s) 
+
+
+Validating:
+Validation loss decreased (0.269278 --> 0.259731).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 87.86%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:40.0 (2.52/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 2:29.9 (3.75/s) 
+
+
+Validating:
+Validation loss decreased (0.259731 --> 0.251230).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 88.42%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:40.9 (2.52/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 2:29.1 (3.78/s) 
+
+
+Validating:
+Validation loss decreased (0.251230 --> 0.247698).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 88.78%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:43.8 (2.51/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 2:29.7 (3.76/s) 
+
+
+Validating:
+Validation loss decreased (0.247698 --> 0.242651).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 89.01%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.5 (2.53/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 2:29.4 (3.77/s) 
+
+
+Validating:
+Validation loss decreased (0.242651 --> 0.239768).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 88.84%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:42.1 (2.51/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 2:29.2 (3.77/s) 
+
+
+Validating:
+Validation loss decreased (0.239768 --> 0.234206).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 89.20%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 8:39.7 (2.53/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 2:28.5 (3.79/s) 
+
+
+Validating:
+Validation loss decreased (0.234206 --> 0.228905).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 89.74%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 2:28.3 (3.80/s) 
+Test loss: 0.23
+Test accuracy: 89.75%
+
+
+Done with 5 runs!
+
+
+
+Starting 5 for hyper parameter setting: 
+Hyper parameters:  {'lr': 0.0001, 'conv_layers': 0, 'dropout': 0.3, 'num_encoder_layers': 4, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:15.3 (4.16/s) 
+Loss: 0.68
+|████████████████████████████████████████| 563/563 [100%] in 1:20.9 (6.96/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.646807).  Saving model ...
+Validation loss: 0.65
+Validation accuracy: 63.16%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:14.1 (4.18/s) 
+Loss: 0.61
+|████████████████████████████████████████| 563/563 [100%] in 1:21.8 (6.88/s) 
+
+
+Validating:
+Validation loss decreased (0.646807 --> 0.538806).  Saving model ...
+Validation loss: 0.54
+Validation accuracy: 68.82%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:14.9 (4.17/s) 
+Loss: 0.52
+|████████████████████████████████████████| 563/563 [100%] in 1:20.7 (6.98/s) 
+
+
+Validating:
+Validation loss decreased (0.538806 --> 0.461330).  Saving model ...
+Validation loss: 0.46
+Validation accuracy: 75.41%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:15.7 (4.16/s) 
+Loss: 0.46
+|████████████████████████████████████████| 563/563 [100%] in 1:21.9 (6.87/s) 
+
+
+Validating:
+Validation loss decreased (0.461330 --> 0.412933).  Saving model ...
+Validation loss: 0.41
+Validation accuracy: 80.16%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.0 (4.15/s) 
+Loss: 0.43
+|████████████████████████████████████████| 563/563 [100%] in 1:21.8 (6.89/s) 
+
+
+Validating:
+Validation loss decreased (0.412933 --> 0.395114).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 82.32%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:14.9 (4.17/s) 
+Loss: 0.42
+|████████████████████████████████████████| 563/563 [100%] in 1:21.2 (6.93/s) 
+
+
+Validating:
+Validation loss decreased (0.395114 --> 0.392508).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.69%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:14.0 (4.18/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 1:21.2 (6.94/s) 
+
+
+Validating:
+Validation loss decreased (0.392508 --> 0.389158).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 83.03%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:14.0 (4.18/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 1:21.5 (6.90/s) 
+
+
+Validating:
+Validation loss decreased (0.389158 --> 0.384772).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.02%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:15.9 (4.16/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 1:21.7 (6.89/s) 
+
+
+Validating:
+Validation loss decreased (0.384772 --> 0.381096).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 81.93%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:15.8 (4.16/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 1:28.0 (6.40/s) 
+
+
+Validating:
+Validation loss decreased (0.381096 --> 0.379953).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.45%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:18.9 (4.12/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 1:20.8 (6.97/s) 
+
+
+Validating:
+Validation loss decreased (0.379953 --> 0.375023).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.73%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:15.8 (4.16/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 1:22.5 (6.83/s) 
+
+
+Validating:
+Validation loss decreased (0.375023 --> 0.372001).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.56%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:14.5 (4.17/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 1:21.7 (6.89/s) 
+
+
+Validating:
+Validation loss decreased (0.372001 --> 0.368212).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.66%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:15.3 (4.16/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 1:22.4 (6.83/s) 
+
+
+Validating:
+Validation loss decreased (0.368212 --> 0.368035).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.16%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:15.3 (4.16/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 1:22.1 (6.85/s) 
+
+
+Validating:
+Validation loss decreased (0.368035 --> 0.362662).  Saving model ...
+Validation loss: 0.36
+Validation accuracy: 82.93%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 1:21.5 (6.91/s) 
+Test loss: 0.37
+Test accuracy: 82.33%
+
+
+Hyper parameters:  {'lr': 0.0001, 'conv_layers': 0, 'dropout': 0.3, 'num_encoder_layers': 4, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.3 (4.15/s) 
+Loss: 0.67
+|████████████████████████████████████████| 563/563 [100%] in 1:21.1 (6.95/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.647358).  Saving model ...
+Validation loss: 0.65
+Validation accuracy: 62.59%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.9 (4.14/s) 
+Loss: 0.61
+|████████████████████████████████████████| 563/563 [100%] in 1:21.0 (6.95/s) 
+
+
+Validating:
+Validation loss decreased (0.647358 --> 0.473224).  Saving model ...
+Validation loss: 0.47
+Validation accuracy: 74.16%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.5 (4.15/s) 
+Loss: 0.47
+|████████████████████████████████████████| 563/563 [100%] in 1:21.3 (6.92/s) 
+
+
+Validating:
+Validation loss decreased (0.473224 --> 0.410653).  Saving model ...
+Validation loss: 0.41
+Validation accuracy: 80.48%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:14.9 (4.17/s) 
+Loss: 0.43
+|████████████████████████████████████████| 563/563 [100%] in 1:22.0 (6.87/s) 
+
+
+Validating:
+Validation loss decreased (0.410653 --> 0.401099).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 82.71%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.6 (4.15/s) 
+Loss: 0.42
+|████████████████████████████████████████| 563/563 [100%] in 1:21.7 (6.89/s) 
+
+
+Validating:
+Validation loss decreased (0.401099 --> 0.400076).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 82.28%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:15.8 (4.16/s) 
+Loss: 0.42
+|████████████████████████████████████████| 563/563 [100%] in 1:20.9 (6.96/s) 
+
+
+Validating:
+Validation loss decreased (0.400076 --> 0.398834).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 82.37%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:15.3 (4.16/s) 
+Loss: 0.42
+|████████████████████████████████████████| 563/563 [100%] in 1:22.5 (6.83/s) 
+
+
+Validating:
+Validation loss decreased (0.398834 --> 0.397710).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 81.68%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:15.4 (4.16/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 1:20.6 (6.98/s) 
+
+
+Validating:
+Validation loss decreased (0.397710 --> 0.393084).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 83.30%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.7 (4.15/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 1:20.9 (6.96/s) 
+
+
+Validating:
+Validation loss decreased (0.393084 --> 0.391841).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.82%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:18.2 (4.13/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 1:25.6 (6.58/s) 
+
+
+Validating:
+Validation loss decreased (0.391841 --> 0.388906).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.55%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:17.9 (4.13/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 1:21.3 (6.93/s) 
+
+
+Validating:
+Validation loss decreased (0.388906 --> 0.386106).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 81.98%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:15.1 (4.17/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 1:22.1 (6.86/s) 
+
+
+Validating:
+Validation loss decreased (0.386106 --> 0.383771).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.53%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:15.6 (4.16/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 1:21.9 (6.87/s) 
+
+
+Validating:
+Validation loss decreased (0.383771 --> 0.380275).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.59%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:15.8 (4.16/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 1:22.0 (6.87/s) 
+
+
+Validating:
+Validation loss decreased (0.380275 --> 0.376194).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.37%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:15.2 (4.16/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 1:22.8 (6.80/s) 
+
+
+Validating:
+Validation loss decreased (0.376194 --> 0.372289).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.76%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 1:21.5 (6.91/s) 
+Test loss: 0.38
+Test accuracy: 83.03%
+
+
+Hyper parameters:  {'lr': 0.0001, 'conv_layers': 0, 'dropout': 0.3, 'num_encoder_layers': 4, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.6 (4.15/s) 
+Loss: 0.67
+|████████████████████████████████████████| 563/563 [100%] in 1:22.4 (6.83/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.617604).  Saving model ...
+Validation loss: 0.62
+Validation accuracy: 65.20%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:15.4 (4.16/s) 
+Loss: 0.57
+|████████████████████████████████████████| 563/563 [100%] in 1:21.4 (6.92/s) 
+
+
+Validating:
+Validation loss decreased (0.617604 --> 0.451621).  Saving model ...
+Validation loss: 0.45
+Validation accuracy: 76.72%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:17.1 (4.14/s) 
+Loss: 0.46
+|████████████████████████████████████████| 563/563 [100%] in 1:22.0 (6.87/s) 
+
+
+Validating:
+Validation loss decreased (0.451621 --> 0.407901).  Saving model ...
+Validation loss: 0.41
+Validation accuracy: 80.97%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.1 (4.15/s) 
+Loss: 0.43
+|████████████████████████████████████████| 563/563 [100%] in 1:24.1 (6.70/s) 
+
+
+Validating:
+Validation loss decreased (0.407901 --> 0.399565).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 82.44%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:17.3 (4.14/s) 
+Loss: 0.42
+|████████████████████████████████████████| 563/563 [100%] in 1:22.4 (6.83/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.40
+Validation accuracy: 82.06%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:17.6 (4.13/s) 
+Loss: 0.42
+|████████████████████████████████████████| 563/563 [100%] in 1:21.7 (6.89/s) 
+
+
+Validating:
+Validation loss decreased (0.399565 --> 0.394273).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 81.93%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.6 (4.15/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 1:22.5 (6.82/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.39
+Validation accuracy: 82.33%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:15.3 (4.16/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 1:21.8 (6.88/s) 
+
+
+Validating:
+Validation loss decreased (0.394273 --> 0.389668).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.97%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:15.4 (4.16/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 1:23.5 (6.74/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.39
+Validation accuracy: 82.96%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:18.0 (4.13/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 1:24.1 (6.69/s) 
+
+
+Validating:
+EarlyStopping counter: 2 out of 3
+Validation loss: 0.39
+Validation accuracy: 82.08%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.0 (4.16/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 1:21.2 (6.93/s) 
+
+
+Validating:
+Validation loss decreased (0.389668 --> 0.384316).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.08%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:15.2 (4.17/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 1:22.0 (6.87/s) 
+
+
+Validating:
+Validation loss decreased (0.384316 --> 0.381212).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.56%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:13.4 (4.19/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 1:21.2 (6.93/s) 
+
+
+Validating:
+Validation loss decreased (0.381212 --> 0.378638).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.59%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:14.8 (4.17/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 1:21.4 (6.91/s) 
+
+
+Validating:
+Validation loss decreased (0.378638 --> 0.375574).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 83.09%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:17.5 (4.14/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 1:22.3 (6.84/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.38
+Validation accuracy: 82.25%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 1:23.7 (6.73/s) 
+Test loss: 0.38
+Test accuracy: 82.88%
+
+
+Hyper parameters:  {'lr': 0.0001, 'conv_layers': 0, 'dropout': 0.3, 'num_encoder_layers': 4, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:18.2 (4.13/s) 
+Loss: 0.67
+|████████████████████████████████████████| 563/563 [100%] in 1:21.3 (6.92/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.642388).  Saving model ...
+Validation loss: 0.64
+Validation accuracy: 62.81%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:18.4 (4.12/s) 
+Loss: 0.58
+|████████████████████████████████████████| 563/563 [100%] in 1:22.0 (6.86/s) 
+
+
+Validating:
+Validation loss decreased (0.642388 --> 0.485722).  Saving model ...
+Validation loss: 0.49
+Validation accuracy: 72.55%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:17.5 (4.14/s) 
+Loss: 0.46
+|████████████████████████████████████████| 563/563 [100%] in 1:22.0 (6.87/s) 
+
+
+Validating:
+Validation loss decreased (0.485722 --> 0.412744).  Saving model ...
+Validation loss: 0.41
+Validation accuracy: 80.26%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:19.7 (4.11/s) 
+Loss: 0.43
+|████████████████████████████████████████| 563/563 [100%] in 1:22.3 (6.84/s) 
+
+
+Validating:
+Validation loss decreased (0.412744 --> 0.404257).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 81.76%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:18.3 (4.12/s) 
+Loss: 0.42
+|████████████████████████████████████████| 563/563 [100%] in 1:19.6 (7.07/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.40
+Validation accuracy: 81.78%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 4:58.7 (4.39/s) 
+Loss: 0.42
+|████████████████████████████████████████| 563/563 [100%] in 1:20.4 (7.00/s) 
+
+
+Validating:
+Validation loss decreased (0.404257 --> 0.398075).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 82.17%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:00.1 (4.38/s) 
+Loss: 0.42
+|████████████████████████████████████████| 563/563 [100%] in 1:19.5 (7.08/s) 
+
+
+Validating:
+Validation loss decreased (0.398075 --> 0.393652).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.58%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 4:59.1 (4.39/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 1:19.5 (7.08/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.39
+Validation accuracy: 82.07%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:01.8 (4.35/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 1:22.7 (6.81/s) 
+
+
+Validating:
+Validation loss decreased (0.393652 --> 0.390821).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.84%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:15.3 (4.16/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 1:22.4 (6.83/s) 
+
+
+Validating:
+Validation loss decreased (0.390821 --> 0.385926).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 83.08%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:06.8 (4.28/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 1:21.0 (6.95/s) 
+
+
+Validating:
+Validation loss decreased (0.385926 --> 0.382851).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.43%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:17.7 (4.13/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 1:21.6 (6.90/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.38
+Validation accuracy: 82.28%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:17.0 (4.14/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 1:21.0 (6.95/s) 
+
+
+Validating:
+Validation loss decreased (0.382851 --> 0.381475).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 81.83%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:17.2 (4.14/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 1:21.2 (6.94/s) 
+
+
+Validating:
+Validation loss decreased (0.381475 --> 0.373998).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.56%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:14.5 (4.18/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 1:20.7 (6.97/s) 
+
+
+Validating:
+Validation loss decreased (0.373998 --> 0.369720).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.84%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 1:21.6 (6.90/s) 
+Test loss: 0.37
+Test accuracy: 83.26%
+
+
+Hyper parameters:  {'lr': 0.0001, 'conv_layers': 0, 'dropout': 0.3, 'num_encoder_layers': 4, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.4 (4.15/s) 
+Loss: 0.68
+|████████████████████████████████████████| 563/563 [100%] in 1:21.1 (6.94/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.635707).  Saving model ...
+Validation loss: 0.64
+Validation accuracy: 62.98%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.0 (4.16/s) 
+Loss: 0.58
+|████████████████████████████████████████| 563/563 [100%] in 1:21.1 (6.94/s) 
+
+
+Validating:
+Validation loss decreased (0.635707 --> 0.481322).  Saving model ...
+Validation loss: 0.48
+Validation accuracy: 73.07%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:21.3 (4.09/s) 
+Loss: 0.47
+|████████████████████████████████████████| 563/563 [100%] in 1:22.2 (6.85/s) 
+
+
+Validating:
+Validation loss decreased (0.481322 --> 0.421557).  Saving model ...
+Validation loss: 0.42
+Validation accuracy: 78.94%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:20.1 (4.10/s) 
+Loss: 0.44
+|████████████████████████████████████████| 563/563 [100%] in 1:22.2 (6.85/s) 
+
+
+Validating:
+Validation loss decreased (0.421557 --> 0.403611).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 81.87%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:07.1 (4.27/s) 
+Loss: 0.42
+|████████████████████████████████████████| 563/563 [100%] in 1:18.8 (7.14/s) 
+
+
+Validating:
+Validation loss decreased (0.403611 --> 0.396954).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 81.44%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:01.3 (4.36/s) 
+Loss: 0.42
+|████████████████████████████████████████| 563/563 [100%] in 1:19.7 (7.06/s) 
+
+
+Validating:
+Validation loss decreased (0.396954 --> 0.393157).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 81.73%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 4:58.0 (4.41/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 1:20.5 (6.99/s) 
+
+
+Validating:
+Validation loss decreased (0.393157 --> 0.390228).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 81.87%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 4:59.6 (4.38/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 1:20.3 (7.02/s) 
+
+
+Validating:
+Validation loss decreased (0.390228 --> 0.384752).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.05%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 4:59.5 (4.38/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 1:21.7 (6.90/s) 
+
+
+Validating:
+Validation loss decreased (0.384752 --> 0.384089).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.28%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:18.0 (4.13/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 1:26.4 (6.51/s) 
+
+
+Validating:
+Validation loss decreased (0.384089 --> 0.381396).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.24%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.4 (4.15/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 1:19.8 (7.05/s) 
+
+
+Validating:
+Validation loss decreased (0.381396 --> 0.375146).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.28%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:00.2 (4.37/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 1:21.3 (6.93/s) 
+
+
+Validating:
+Validation loss decreased (0.375146 --> 0.374026).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.31%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 4:58.3 (4.40/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 1:19.7 (7.07/s) 
+
+
+Validating:
+Validation loss decreased (0.374026 --> 0.372057).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.37%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 4:59.4 (4.39/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 1:19.3 (7.10/s) 
+
+
+Validating:
+Validation loss decreased (0.372057 --> 0.365376).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 83.38%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 4:57.2 (4.42/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 1:19.4 (7.09/s) 
+
+
+Validating:
+Validation loss decreased (0.365376 --> 0.364839).  Saving model ...
+Validation loss: 0.36
+Validation accuracy: 82.40%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 1:19.5 (7.08/s) 
+Test loss: 0.36
+Test accuracy: 82.36%
+
+
+Done with 5 runs!
+
+
+
+Starting 5 for hyper parameter setting: 
+Hyper parameters:  {'lr': 0.001, 'conv_layers': 0, 'dropout': 0.2, 'num_encoder_layers': 2, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:21.0 (6.53/s) 
+Loss: 0.48
+|████████████████████████████████████████| 563/563 [100%] in 46.2s (12.18/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.397722).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 81.73%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:21.0 (6.53/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 46.9s (12.02/s) 
+
+
+Validating:
+Validation loss decreased (0.397722 --> 0.373064).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.99%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:22.9 (6.47/s) 
+Loss: 0.37
+|████████████████████████████████████████| 563/563 [100%] in 46.8s (12.02/s) 
+
+
+Validating:
+Validation loss decreased (0.373064 --> 0.342918).  Saving model ...
+Validation loss: 0.34
+Validation accuracy: 83.07%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:21.1 (6.53/s) 
+Loss: 0.35
+|████████████████████████████████████████| 563/563 [100%] in 46.4s (12.13/s) 
+
+
+Validating:
+Validation loss decreased (0.342918 --> 0.323885).  Saving model ...
+Validation loss: 0.32
+Validation accuracy: 84.05%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:21.0 (6.53/s) 
+Loss: 0.33
+|████████████████████████████████████████| 563/563 [100%] in 46.3s (12.15/s) 
+
+
+Validating:
+Validation loss decreased (0.323885 --> 0.310003).  Saving model ...
+Validation loss: 0.31
+Validation accuracy: 84.70%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:20.6 (6.54/s) 
+Loss: 0.31
+|████████████████████████████████████████| 563/563 [100%] in 47.0s (11.98/s) 
+
+
+Validating:
+Validation loss decreased (0.310003 --> 0.295750).  Saving model ...
+Validation loss: 0.30
+Validation accuracy: 84.52%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:33.7 (6.14/s) 
+Loss: 0.30
+|████████████████████████████████████████| 563/563 [100%] in 48.2s (11.68/s) 
+
+
+Validating:
+Validation loss decreased (0.295750 --> 0.289738).  Saving model ...
+Validation loss: 0.29
+Validation accuracy: 85.26%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.1 (6.13/s) 
+Loss: 0.30
+|████████████████████████████████████████| 563/563 [100%] in 48.1s (11.71/s) 
+
+
+Validating:
+Validation loss decreased (0.289738 --> 0.276751).  Saving model ...
+Validation loss: 0.28
+Validation accuracy: 86.01%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.4 (6.09/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 48.4s (11.64/s) 
+
+
+Validating:
+Validation loss decreased (0.276751 --> 0.273294).  Saving model ...
+Validation loss: 0.27
+Validation accuracy: 85.74%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.3 (6.10/s) 
+Loss: 0.28
+|████████████████████████████████████████| 563/563 [100%] in 48.3s (11.65/s) 
+
+
+Validating:
+Validation loss decreased (0.273294 --> 0.267474).  Saving model ...
+Validation loss: 0.27
+Validation accuracy: 86.27%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.0 (6.08/s) 
+Loss: 0.28
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.73/s) 
+
+
+Validating:
+Validation loss decreased (0.267474 --> 0.257651).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 87.30%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.0 (6.11/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 48.4s (11.64/s) 
+
+
+Validating:
+Validation loss decreased (0.257651 --> 0.251068).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 87.54%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:33.8 (6.14/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 48.1s (11.72/s) 
+
+
+Validating:
+Validation loss decreased (0.251068 --> 0.243601).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 89.02%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.7 (6.11/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 48.6s (11.59/s) 
+
+
+Validating:
+Validation loss decreased (0.243601 --> 0.237713).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 89.50%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.0 (6.14/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 50.3s (11.20/s) 
+
+
+Validating:
+Validation loss decreased (0.237713 --> 0.229830).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 90.27%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 52.8s (10.66/s) 
+Test loss: 0.23
+Test accuracy: 89.81%
+
+
+Hyper parameters:  {'lr': 0.001, 'conv_layers': 0, 'dropout': 0.2, 'num_encoder_layers': 2, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.7 (6.06/s) 
+Loss: 0.46
+|████████████████████████████████████████| 563/563 [100%] in 47.7s (11.81/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.388192).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 81.71%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.4 (6.10/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 48.3s (11.65/s) 
+
+
+Validating:
+Validation loss decreased (0.388192 --> 0.359550).  Saving model ...
+Validation loss: 0.36
+Validation accuracy: 82.51%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.6 (6.12/s) 
+Loss: 0.36
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.75/s) 
+
+
+Validating:
+Validation loss decreased (0.359550 --> 0.325456).  Saving model ...
+Validation loss: 0.33
+Validation accuracy: 83.70%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.0 (6.08/s) 
+Loss: 0.33
+|████████████████████████████████████████| 563/563 [100%] in 48.9s (11.51/s) 
+
+
+Validating:
+Validation loss decreased (0.325456 --> 0.305069).  Saving model ...
+Validation loss: 0.31
+Validation accuracy: 84.52%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.2 (6.13/s) 
+Loss: 0.31
+|████████████████████████████████████████| 563/563 [100%] in 47.8s (11.77/s) 
+
+
+Validating:
+Validation loss decreased (0.305069 --> 0.298215).  Saving model ...
+Validation loss: 0.30
+Validation accuracy: 85.35%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.4 (6.07/s) 
+Loss: 0.30
+|████████████████████████████████████████| 563/563 [100%] in 48.2s (11.69/s) 
+
+
+Validating:
+Validation loss decreased (0.298215 --> 0.281223).  Saving model ...
+Validation loss: 0.28
+Validation accuracy: 85.96%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.9 (6.11/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 47.0s (11.97/s) 
+
+
+Validating:
+Validation loss decreased (0.281223 --> 0.273693).  Saving model ...
+Validation loss: 0.27
+Validation accuracy: 86.59%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.4 (6.09/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 47.7s (11.81/s) 
+
+
+Validating:
+Validation loss decreased (0.273693 --> 0.264011).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 87.58%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.7 (6.11/s) 
+Loss: 0.28
+|████████████████████████████████████████| 563/563 [100%] in 48.2s (11.67/s) 
+
+
+Validating:
+Validation loss decreased (0.264011 --> 0.257266).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 87.63%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.6 (6.12/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 49.4s (11.40/s) 
+
+
+Validating:
+Validation loss decreased (0.257266 --> 0.250088).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 87.92%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.6 (6.06/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 48.3s (11.64/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.25
+Validation accuracy: 88.21%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.2 (6.10/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 48.7s (11.56/s) 
+
+
+Validating:
+Validation loss decreased (0.250088 --> 0.245265).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 88.65%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.1 (6.11/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 48.3s (11.67/s) 
+
+
+Validating:
+Validation loss decreased (0.245265 --> 0.239033).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 88.65%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.9 (6.05/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.75/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.24
+Validation accuracy: 89.06%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.7 (6.09/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.75/s) 
+
+
+Validating:
+Validation loss decreased (0.239033 --> 0.228857).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 89.29%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 47.8s (11.77/s) 
+Test loss: 0.23
+Test accuracy: 89.19%
+
+
+Hyper parameters:  {'lr': 0.001, 'conv_layers': 0, 'dropout': 0.2, 'num_encoder_layers': 2, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.8 (6.06/s) 
+Loss: 0.48
+|████████████████████████████████████████| 563/563 [100%] in 47.7s (11.80/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.384344).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.31%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.7 (6.12/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 47.6s (11.82/s) 
+
+
+Validating:
+Validation loss decreased (0.384344 --> 0.348311).  Saving model ...
+Validation loss: 0.35
+Validation accuracy: 82.82%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.1 (6.08/s) 
+Loss: 0.35
+|████████████████████████████████████████| 563/563 [100%] in 49.0s (11.50/s) 
+
+
+Validating:
+Validation loss decreased (0.348311 --> 0.325195).  Saving model ...
+Validation loss: 0.33
+Validation accuracy: 83.39%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.6 (6.09/s) 
+Loss: 0.33
+|████████████████████████████████████████| 563/563 [100%] in 48.6s (11.59/s) 
+
+
+Validating:
+Validation loss decreased (0.325195 --> 0.308589).  Saving model ...
+Validation loss: 0.31
+Validation accuracy: 84.17%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.7 (6.09/s) 
+Loss: 0.31
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.76/s) 
+
+
+Validating:
+Validation loss decreased (0.308589 --> 0.295159).  Saving model ...
+Validation loss: 0.30
+Validation accuracy: 84.77%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.7 (6.11/s) 
+Loss: 0.30
+|████████████████████████████████████████| 563/563 [100%] in 47.5s (11.85/s) 
+
+
+Validating:
+Validation loss decreased (0.295159 --> 0.291557).  Saving model ...
+Validation loss: 0.29
+Validation accuracy: 85.01%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.0 (6.11/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.76/s) 
+
+
+Validating:
+Validation loss decreased (0.291557 --> 0.279470).  Saving model ...
+Validation loss: 0.28
+Validation accuracy: 86.23%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.5 (6.09/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 47.7s (11.80/s) 
+
+
+Validating:
+Validation loss decreased (0.279470 --> 0.267962).  Saving model ...
+Validation loss: 0.27
+Validation accuracy: 86.36%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.8 (6.09/s) 
+Loss: 0.28
+|████████████████████████████████████████| 563/563 [100%] in 47.3s (11.90/s) 
+
+
+Validating:
+Validation loss decreased (0.267962 --> 0.258914).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 87.54%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.9 (6.11/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 49.2s (11.44/s) 
+
+
+Validating:
+Validation loss decreased (0.258914 --> 0.252751).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 87.84%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.8 (6.09/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.73/s) 
+
+
+Validating:
+Validation loss decreased (0.252751 --> 0.251545).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 88.56%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.2 (6.13/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 48.1s (11.71/s) 
+
+
+Validating:
+Validation loss decreased (0.251545 --> 0.243700).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 89.26%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.2 (6.10/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 49.2s (11.43/s) 
+
+
+Validating:
+Validation loss decreased (0.243700 --> 0.238024).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 89.02%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.0 (6.11/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 48.7s (11.56/s) 
+
+
+Validating:
+Validation loss decreased (0.238024 --> 0.231263).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 89.31%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:45.6 (5.82/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 48.2s (11.68/s) 
+
+
+Validating:
+Validation loss decreased (0.231263 --> 0.229563).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 89.79%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 48.4s (11.64/s) 
+Test loss: 0.23
+Test accuracy: 89.77%
+
+
+Hyper parameters:  {'lr': 0.001, 'conv_layers': 0, 'dropout': 0.2, 'num_encoder_layers': 2, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.6 (6.09/s) 
+Loss: 0.47
+|████████████████████████████████████████| 563/563 [100%] in 48.2s (11.68/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.389229).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.27%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.7 (6.09/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 47.8s (11.78/s) 
+
+
+Validating:
+Validation loss decreased (0.389229 --> 0.353836).  Saving model ...
+Validation loss: 0.35
+Validation accuracy: 82.89%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.0 (6.08/s) 
+Loss: 0.36
+|████████████████████████████████████████| 563/563 [100%] in 47.7s (11.79/s) 
+
+
+Validating:
+Validation loss decreased (0.353836 --> 0.338866).  Saving model ...
+Validation loss: 0.34
+Validation accuracy: 82.99%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.4 (6.07/s) 
+Loss: 0.34
+|████████████████████████████████████████| 563/563 [100%] in 49.2s (11.45/s) 
+
+
+Validating:
+Validation loss decreased (0.338866 --> 0.315858).  Saving model ...
+Validation loss: 0.32
+Validation accuracy: 84.30%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:37.0 (6.05/s) 
+Loss: 0.32
+|████████████████████████████████████████| 563/563 [100%] in 48.6s (11.58/s) 
+
+
+Validating:
+Validation loss decreased (0.315858 --> 0.299719).  Saving model ...
+Validation loss: 0.30
+Validation accuracy: 85.02%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.7 (6.06/s) 
+Loss: 0.31
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.76/s) 
+
+
+Validating:
+Validation loss decreased (0.299719 --> 0.295883).  Saving model ...
+Validation loss: 0.30
+Validation accuracy: 85.15%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:37.4 (6.04/s) 
+Loss: 0.30
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.76/s) 
+
+
+Validating:
+Validation loss decreased (0.295883 --> 0.284424).  Saving model ...
+Validation loss: 0.28
+Validation accuracy: 85.43%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.6 (6.09/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 47.8s (11.78/s) 
+
+
+Validating:
+Validation loss decreased (0.284424 --> 0.276880).  Saving model ...
+Validation loss: 0.28
+Validation accuracy: 86.14%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.6 (6.06/s) 
+Loss: 0.28
+|████████████████████████████████████████| 563/563 [100%] in 48.3s (11.67/s) 
+
+
+Validating:
+Validation loss decreased (0.276880 --> 0.262712).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 87.74%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.0 (6.08/s) 
+Loss: 0.28
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.75/s) 
+
+
+Validating:
+Validation loss decreased (0.262712 --> 0.256390).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 87.47%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.4 (6.07/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 47.8s (11.78/s) 
+
+
+Validating:
+Validation loss decreased (0.256390 --> 0.248632).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 88.48%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.7 (6.09/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 48.5s (11.60/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.25
+Validation accuracy: 88.57%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.8 (6.06/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 47.7s (11.79/s) 
+
+
+Validating:
+Validation loss decreased (0.248632 --> 0.237958).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 89.68%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.3 (6.10/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 47.5s (11.84/s) 
+
+
+Validating:
+Validation loss decreased (0.237958 --> 0.233853).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 89.86%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:38.2 (6.02/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 47.8s (11.77/s) 
+
+
+Validating:
+Validation loss decreased (0.233853 --> 0.228954).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 88.90%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 48.4s (11.62/s) 
+Test loss: 0.23
+Test accuracy: 90.11%
+
+
+Hyper parameters:  {'lr': 0.001, 'conv_layers': 0, 'dropout': 0.2, 'num_encoder_layers': 2, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.6 (6.09/s) 
+Loss: 0.48
+|████████████████████████████████████████| 563/563 [100%] in 47.8s (11.78/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.400282).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 82.01%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.7 (6.09/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 48.6s (11.59/s) 
+
+
+Validating:
+Validation loss decreased (0.400282 --> 0.381495).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.39%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.5 (6.09/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 48.1s (11.71/s) 
+
+
+Validating:
+Validation loss decreased (0.381495 --> 0.350517).  Saving model ...
+Validation loss: 0.35
+Validation accuracy: 83.01%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.4 (6.10/s) 
+Loss: 0.35
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.75/s) 
+
+
+Validating:
+Validation loss decreased (0.350517 --> 0.327988).  Saving model ...
+Validation loss: 0.33
+Validation accuracy: 83.47%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.1 (6.08/s) 
+Loss: 0.33
+|████████████████████████████████████████| 563/563 [100%] in 48.3s (11.66/s) 
+
+
+Validating:
+Validation loss decreased (0.327988 --> 0.304836).  Saving model ...
+Validation loss: 0.30
+Validation accuracy: 84.28%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.8 (6.11/s) 
+Loss: 0.31
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.73/s) 
+
+
+Validating:
+Validation loss decreased (0.304836 --> 0.295676).  Saving model ...
+Validation loss: 0.30
+Validation accuracy: 84.56%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.8 (6.08/s) 
+Loss: 0.30
+|████████████████████████████████████████| 563/563 [100%] in 47.3s (11.91/s) 
+
+
+Validating:
+Validation loss decreased (0.295676 --> 0.286338).  Saving model ...
+Validation loss: 0.29
+Validation accuracy: 84.64%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.0 (6.11/s) 
+Loss: 0.30
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.72/s) 
+
+
+Validating:
+Validation loss decreased (0.286338 --> 0.285695).  Saving model ...
+Validation loss: 0.29
+Validation accuracy: 85.16%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.1 (6.08/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 48.3s (11.66/s) 
+
+
+Validating:
+Validation loss decreased (0.285695 --> 0.274763).  Saving model ...
+Validation loss: 0.27
+Validation accuracy: 85.83%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.1 (6.10/s) 
+Loss: 0.28
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.73/s) 
+
+
+Validating:
+Validation loss decreased (0.274763 --> 0.267032).  Saving model ...
+Validation loss: 0.27
+Validation accuracy: 86.20%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.3 (6.10/s) 
+Loss: 0.28
+|████████████████████████████████████████| 563/563 [100%] in 47.4s (11.87/s) 
+
+
+Validating:
+Validation loss decreased (0.267032 --> 0.264672).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 86.64%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.8 (6.11/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 47.7s (11.80/s) 
+
+
+Validating:
+Validation loss decreased (0.264672 --> 0.256796).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 86.81%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.1 (6.13/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 48.1s (11.71/s) 
+
+
+Validating:
+Validation loss decreased (0.256796 --> 0.251421).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 87.17%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.0 (6.11/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 48.6s (11.59/s) 
+
+
+Validating:
+Validation loss decreased (0.251421 --> 0.250367).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 87.19%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:42.1 (5.91/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 47.5s (11.85/s) 
+
+
+Validating:
+Validation loss decreased (0.250367 --> 0.240629).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 88.48%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 47.6s (11.83/s) 
+Test loss: 0.24
+Test accuracy: 88.33%
+
+
+Done with 5 runs!
+
+
+
+Starting 5 for hyper parameter setting: 
+Hyper parameters:  {'lr': 0.0001, 'conv_layers': 0, 'dropout': 0.1, 'num_encoder_layers': 2, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.8 (6.08/s) 
+Loss: 0.66
+|████████████████████████████████████████| 563/563 [100%] in 47.7s (11.80/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.640961).  Saving model ...
+Validation loss: 0.64
+Validation accuracy: 63.04%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.3 (6.10/s) 
+Loss: 0.57
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.75/s) 
+
+
+Validating:
+Validation loss decreased (0.640961 --> 0.484077).  Saving model ...
+Validation loss: 0.48
+Validation accuracy: 73.82%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.6 (6.12/s) 
+Loss: 0.46
+|████████████████████████████████████████| 563/563 [100%] in 48.5s (11.61/s) 
+
+
+Validating:
+Validation loss decreased (0.484077 --> 0.411654).  Saving model ...
+Validation loss: 0.41
+Validation accuracy: 80.40%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.3 (6.10/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 47.1s (11.96/s) 
+
+
+Validating:
+Validation loss decreased (0.411654 --> 0.394220).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 81.62%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.5 (6.12/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 47.4s (11.87/s) 
+
+
+Validating:
+Validation loss decreased (0.394220 --> 0.388204).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.64%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.2 (6.13/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 49.0s (11.48/s) 
+
+
+Validating:
+Validation loss decreased (0.388204 --> 0.388198).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 81.59%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.5 (6.12/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 47.8s (11.79/s) 
+
+
+Validating:
+Validation loss decreased (0.388198 --> 0.383803).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.45%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.5 (6.09/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 48.5s (11.60/s) 
+
+
+Validating:
+Validation loss decreased (0.383803 --> 0.380025).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.13%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.1 (6.10/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.76/s) 
+
+
+Validating:
+Validation loss decreased (0.380025 --> 0.377745).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.17%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.8 (6.09/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 48.2s (11.69/s) 
+
+
+Validating:
+Validation loss decreased (0.377745 --> 0.372026).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.18%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.7 (6.11/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.74/s) 
+
+
+Validating:
+Validation loss decreased (0.372026 --> 0.369791).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.56%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.0 (6.11/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.76/s) 
+
+
+Validating:
+Validation loss decreased (0.369791 --> 0.366687).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.78%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.2 (6.10/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.74/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.37
+Validation accuracy: 82.50%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.2 (6.10/s) 
+Loss: 0.37
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.74/s) 
+
+
+Validating:
+Validation loss decreased (0.366687 --> 0.366046).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.68%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.1 (6.08/s) 
+Loss: 0.37
+|████████████████████████████████████████| 563/563 [100%] in 48.9s (11.51/s) 
+
+
+Validating:
+Validation loss decreased (0.366046 --> 0.361996).  Saving model ...
+Validation loss: 0.36
+Validation accuracy: 82.76%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 48.1s (11.72/s) 
+Test loss: 0.36
+Test accuracy: 82.73%
+
+
+Hyper parameters:  {'lr': 0.0001, 'conv_layers': 0, 'dropout': 0.1, 'num_encoder_layers': 2, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.6 (6.12/s) 
+Loss: 0.66
+|████████████████████████████████████████| 563/563 [100%] in 48.7s (11.55/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.646508).  Saving model ...
+Validation loss: 0.65
+Validation accuracy: 62.97%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.1 (6.13/s) 
+Loss: 0.60
+|████████████████████████████████████████| 563/563 [100%] in 48.2s (11.68/s) 
+
+
+Validating:
+Validation loss decreased (0.646508 --> 0.556165).  Saving model ...
+Validation loss: 0.56
+Validation accuracy: 68.89%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.5 (6.12/s) 
+Loss: 0.51
+|████████████████████████████████████████| 563/563 [100%] in 48.7s (11.56/s) 
+
+
+Validating:
+Validation loss decreased (0.556165 --> 0.444633).  Saving model ...
+Validation loss: 0.44
+Validation accuracy: 77.32%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.8 (6.11/s) 
+Loss: 0.44
+|████████████████████████████████████████| 563/563 [100%] in 47.3s (11.89/s) 
+
+
+Validating:
+Validation loss decreased (0.444633 --> 0.409355).  Saving model ...
+Validation loss: 0.41
+Validation accuracy: 81.65%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.1 (6.13/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 47.5s (11.85/s) 
+
+
+Validating:
+Validation loss decreased (0.409355 --> 0.394519).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 81.95%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.3 (6.13/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 47.7s (11.80/s) 
+
+
+Validating:
+Validation loss decreased (0.394519 --> 0.393237).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 81.93%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.6 (6.12/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 48.2s (11.67/s) 
+
+
+Validating:
+Validation loss decreased (0.393237 --> 0.393109).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.06%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:33.8 (6.14/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.76/s) 
+
+
+Validating:
+Validation loss decreased (0.393109 --> 0.388243).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.49%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.1 (6.13/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 47.7s (11.80/s) 
+
+
+Validating:
+Validation loss decreased (0.388243 --> 0.382758).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.28%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.0 (6.11/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.76/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.38
+Validation accuracy: 82.36%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:33.0 (6.16/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 48.2s (11.69/s) 
+
+
+Validating:
+Validation loss decreased (0.382758 --> 0.382136).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.56%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.6 (6.09/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 48.3s (11.65/s) 
+
+
+Validating:
+Validation loss decreased (0.382136 --> 0.377326).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.83%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.9 (6.11/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 47.6s (11.83/s) 
+
+
+Validating:
+Validation loss decreased (0.377326 --> 0.372159).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 83.41%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.3 (6.10/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 47.8s (11.78/s) 
+
+
+Validating:
+Validation loss decreased (0.372159 --> 0.370872).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.96%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:38.9 (6.00/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 53.0s (10.62/s) 
+
+
+Validating:
+Validation loss decreased (0.370872 --> 0.368159).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.34%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 49.0s (11.50/s) 
+Test loss: 0.36
+Test accuracy: 82.93%
+
+
+Hyper parameters:  {'lr': 0.0001, 'conv_layers': 0, 'dropout': 0.1, 'num_encoder_layers': 2, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.9 (6.08/s) 
+Loss: 0.65
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.72/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.608752).  Saving model ...
+Validation loss: 0.61
+Validation accuracy: 65.09%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.5 (6.12/s) 
+Loss: 0.58
+|████████████████████████████████████████| 563/563 [100%] in 49.0s (11.49/s) 
+
+
+Validating:
+Validation loss decreased (0.608752 --> 0.514861).  Saving model ...
+Validation loss: 0.51
+Validation accuracy: 71.61%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.1 (6.10/s) 
+Loss: 0.46
+|████████████████████████████████████████| 563/563 [100%] in 48.1s (11.70/s) 
+
+
+Validating:
+Validation loss decreased (0.514861 --> 0.416839).  Saving model ...
+Validation loss: 0.42
+Validation accuracy: 79.25%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.3 (6.13/s) 
+Loss: 0.42
+|████████████████████████████████████████| 563/563 [100%] in 48.2s (11.69/s) 
+
+
+Validating:
+Validation loss decreased (0.416839 --> 0.400216).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 82.06%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.7 (6.12/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 48.5s (11.61/s) 
+
+
+Validating:
+Validation loss decreased (0.400216 --> 0.398496).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 82.28%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.7 (6.09/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.73/s) 
+
+
+Validating:
+Validation loss decreased (0.398496 --> 0.391095).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.28%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.1 (6.11/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 48.9s (11.51/s) 
+
+
+Validating:
+Validation loss decreased (0.391095 --> 0.387368).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.26%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:37.1 (6.05/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 47.6s (11.83/s) 
+
+
+Validating:
+Validation loss decreased (0.387368 --> 0.386779).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.36%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.0 (6.11/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 48.2s (11.68/s) 
+
+
+Validating:
+Validation loss decreased (0.386779 --> 0.385305).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.12%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:37.4 (6.04/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 48.3s (11.66/s) 
+
+
+Validating:
+Validation loss decreased (0.385305 --> 0.384266).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.47%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.9 (6.11/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 47.6s (11.83/s) 
+
+
+Validating:
+Validation loss decreased (0.384266 --> 0.376725).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 83.07%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.5 (6.09/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.74/s) 
+
+
+Validating:
+Validation loss decreased (0.376725 --> 0.371771).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.84%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.4 (6.10/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.75/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.37
+Validation accuracy: 82.57%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.7 (6.06/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 49.9s (11.29/s) 
+
+
+Validating:
+Validation loss decreased (0.371771 --> 0.365826).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.36%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:38.0 (6.02/s) 
+Loss: 0.37
+|████████████████████████████████████████| 563/563 [100%] in 48.2s (11.67/s) 
+
+
+Validating:
+Validation loss decreased (0.365826 --> 0.364073).  Saving model ...
+Validation loss: 0.36
+Validation accuracy: 82.99%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 48.2s (11.67/s) 
+Test loss: 0.36
+Test accuracy: 83.08%
+
+
+Hyper parameters:  {'lr': 0.0001, 'conv_layers': 0, 'dropout': 0.1, 'num_encoder_layers': 2, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.6 (6.12/s) 
+Loss: 0.65
+|████████████████████████████████████████| 563/563 [100%] in 48.4s (11.63/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.618458).  Saving model ...
+Validation loss: 0.62
+Validation accuracy: 63.05%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.9 (6.08/s) 
+Loss: 0.49
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.75/s) 
+
+
+Validating:
+Validation loss decreased (0.618458 --> 0.431736).  Saving model ...
+Validation loss: 0.43
+Validation accuracy: 78.37%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.5 (6.12/s) 
+Loss: 0.44
+|████████████████████████████████████████| 563/563 [100%] in 48.9s (11.52/s) 
+
+
+Validating:
+Validation loss decreased (0.431736 --> 0.415702).  Saving model ...
+Validation loss: 0.42
+Validation accuracy: 80.60%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.3 (6.13/s) 
+Loss: 0.42
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.74/s) 
+
+
+Validating:
+Validation loss decreased (0.415702 --> 0.408281).  Saving model ...
+Validation loss: 0.41
+Validation accuracy: 80.91%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.4 (6.13/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 47.6s (11.83/s) 
+
+
+Validating:
+Validation loss decreased (0.408281 --> 0.399045).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 82.36%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:33.8 (6.14/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 47.4s (11.88/s) 
+
+
+Validating:
+Validation loss decreased (0.399045 --> 0.392935).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 83.10%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.8 (6.11/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 48.1s (11.70/s) 
+
+
+Validating:
+Validation loss decreased (0.392935 --> 0.390545).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.84%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.9 (6.05/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 49.6s (11.35/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.39
+Validation accuracy: 82.45%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:41.6 (5.93/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 49.6s (11.35/s) 
+
+
+Validating:
+Validation loss decreased (0.390545 --> 0.382352).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 83.12%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:38.8 (6.00/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 48.3s (11.66/s) 
+
+
+Validating:
+Validation loss decreased (0.382352 --> 0.379608).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.72%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.9 (6.11/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 48.9s (11.51/s) 
+
+
+Validating:
+Validation loss decreased (0.379608 --> 0.373889).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.39%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.1 (6.10/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 48.3s (11.66/s) 
+
+
+Validating:
+Validation loss decreased (0.373889 --> 0.371683).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.65%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.1 (6.10/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 48.6s (11.59/s) 
+
+
+Validating:
+Validation loss decreased (0.371683 --> 0.367762).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.51%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.3 (6.10/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 47.5s (11.86/s) 
+
+
+Validating:
+Validation loss decreased (0.367762 --> 0.365444).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.61%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.6 (6.09/s) 
+Loss: 0.37
+|████████████████████████████████████████| 563/563 [100%] in 48.3s (11.67/s) 
+
+
+Validating:
+Validation loss decreased (0.365444 --> 0.362123).  Saving model ...
+Validation loss: 0.36
+Validation accuracy: 82.88%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 48.9s (11.52/s) 
+Test loss: 0.36
+Test accuracy: 82.70%
+
+
+Hyper parameters:  {'lr': 0.0001, 'conv_layers': 0, 'dropout': 0.1, 'num_encoder_layers': 2, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.6 (6.12/s) 
+Loss: 0.66
+|████████████████████████████████████████| 563/563 [100%] in 48.4s (11.63/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.645996).  Saving model ...
+Validation loss: 0.65
+Validation accuracy: 62.97%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.3 (6.13/s) 
+Loss: 0.57
+|████████████████████████████████████████| 563/563 [100%] in 48.4s (11.63/s) 
+
+
+Validating:
+Validation loss decreased (0.645996 --> 0.480790).  Saving model ...
+Validation loss: 0.48
+Validation accuracy: 73.48%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.5 (6.12/s) 
+Loss: 0.45
+|████████████████████████████████████████| 563/563 [100%] in 48.1s (11.71/s) 
+
+
+Validating:
+Validation loss decreased (0.480790 --> 0.406845).  Saving model ...
+Validation loss: 0.41
+Validation accuracy: 80.96%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.1 (6.13/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 48.1s (11.71/s) 
+
+
+Validating:
+Validation loss decreased (0.406845 --> 0.398901).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 82.29%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.6 (6.12/s) 
+Loss: 0.41
+|████████████████████████████████████████| 563/563 [100%] in 47.4s (11.89/s) 
+
+
+Validating:
+Validation loss decreased (0.398901 --> 0.398655).  Saving model ...
+Validation loss: 0.40
+Validation accuracy: 82.46%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.8 (6.11/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 48.5s (11.62/s) 
+
+
+Validating:
+Validation loss decreased (0.398655 --> 0.391313).  Saving model ...
+Validation loss: 0.39
+Validation accuracy: 82.86%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:34.8 (6.11/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 47.7s (11.79/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.39
+Validation accuracy: 82.97%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:33.2 (6.16/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 47.9s (11.74/s) 
+
+
+Validating:
+Validation loss decreased (0.391313 --> 0.383932).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.62%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.5 (6.09/s) 
+Loss: 0.40
+|████████████████████████████████████████| 563/563 [100%] in 49.1s (11.47/s) 
+
+
+Validating:
+Validation loss decreased (0.383932 --> 0.383858).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.60%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.1 (6.10/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.74/s) 
+
+
+Validating:
+Validation loss decreased (0.383858 --> 0.379328).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 83.10%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:36.0 (6.08/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 48.5s (11.61/s) 
+
+
+Validating:
+Validation loss decreased (0.379328 --> 0.375001).  Saving model ...
+Validation loss: 0.38
+Validation accuracy: 82.13%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.4 (6.09/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 48.8s (11.53/s) 
+
+
+Validating:
+Validation loss decreased (0.375001 --> 0.371200).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 82.73%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.6 (6.09/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.73/s) 
+
+
+Validating:
+Validation loss decreased (0.371200 --> 0.369150).  Saving model ...
+Validation loss: 0.37
+Validation accuracy: 83.19%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:35.5 (6.09/s) 
+Loss: 0.38
+|████████████████████████████████████████| 563/563 [100%] in 48.0s (11.74/s) 
+
+
+Validating:
+Validation loss decreased (0.369150 --> 0.362784).  Saving model ...
+Validation loss: 0.36
+Validation accuracy: 82.86%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 3:37.1 (6.05/s) 
+Loss: 0.37
+|████████████████████████████████████████| 563/563 [100%] in 48.4s (11.64/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.36
+Validation accuracy: 82.56%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 47.5s (11.85/s) 
+Test loss: 0.36
+Test accuracy: 82.64%
+
+
+Done with 5 runs!
+
+
+
+Starting 5 for hyper parameter setting: 
+Hyper parameters:  {'lr': 0.01, 'conv_layers': 0, 'dropout': 0.3, 'num_encoder_layers': 4, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.5 (4.15/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 1:22.2 (6.85/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.305611).  Saving model ...
+Validation loss: 0.31
+Validation accuracy: 83.85%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.9 (4.14/s) 
+Loss: 0.30
+|████████████████████████████████████████| 563/563 [100%] in 1:21.6 (6.90/s) 
+
+
+Validating:
+Validation loss decreased (0.305611 --> 0.275817).  Saving model ...
+Validation loss: 0.28
+Validation accuracy: 85.12%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.7 (4.15/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 1:22.7 (6.81/s) 
+
+
+Validating:
+Validation loss decreased (0.275817 --> 0.264037).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 85.76%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:18.5 (4.12/s) 
+Loss: 0.28
+|████████████████████████████████████████| 563/563 [100%] in 1:21.5 (6.91/s) 
+
+
+Validating:
+Validation loss decreased (0.264037 --> 0.253871).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 85.80%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:17.8 (4.13/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 1:22.7 (6.81/s) 
+
+
+Validating:
+Validation loss decreased (0.253871 --> 0.250417).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 86.29%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:19.6 (4.11/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 1:21.3 (6.93/s) 
+
+
+Validating:
+Validation loss decreased (0.250417 --> 0.246704).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 86.88%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:22.3 (4.07/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 1:21.6 (6.90/s) 
+
+
+Validating:
+Validation loss decreased (0.246704 --> 0.242978).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 86.90%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:21.2 (4.09/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 1:22.8 (6.80/s) 
+
+
+Validating:
+Validation loss decreased (0.242978 --> 0.238539).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 86.69%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:21.0 (4.09/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 1:22.3 (6.84/s) 
+
+
+Validating:
+Validation loss decreased (0.238539 --> 0.235885).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 86.84%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:20.8 (4.09/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 1:21.3 (6.93/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.24
+Validation accuracy: 86.54%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:17.8 (4.13/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 1:23.0 (6.78/s) 
+
+
+Validating:
+EarlyStopping counter: 2 out of 3
+Validation loss: 0.24
+Validation accuracy: 86.66%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:18.8 (4.12/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 1:21.4 (6.92/s) 
+
+
+Validating:
+Validation loss decreased (0.235885 --> 0.229444).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 86.83%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:20.8 (4.09/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 1:23.0 (6.79/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.23
+Validation accuracy: 87.01%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:19.7 (4.11/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 1:23.0 (6.78/s) 
+
+
+Validating:
+Validation loss decreased (0.229444 --> 0.228985).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 87.25%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:19.4 (4.11/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 1:21.8 (6.88/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.23
+Validation accuracy: 87.19%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 1:21.3 (6.92/s) 
+Test loss: 0.23
+Test accuracy: 87.20%
+
+
+Hyper parameters:  {'lr': 0.01, 'conv_layers': 0, 'dropout': 0.3, 'num_encoder_layers': 4, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:18.6 (4.12/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 1:20.7 (6.98/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.307483).  Saving model ...
+Validation loss: 0.31
+Validation accuracy: 83.24%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:17.5 (4.14/s) 
+Loss: 0.30
+|████████████████████████████████████████| 563/563 [100%] in 1:21.4 (6.92/s) 
+
+
+Validating:
+Validation loss decreased (0.307483 --> 0.280677).  Saving model ...
+Validation loss: 0.28
+Validation accuracy: 84.86%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:21.7 (4.08/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 1:23.1 (6.78/s) 
+
+
+Validating:
+Validation loss decreased (0.280677 --> 0.265635).  Saving model ...
+Validation loss: 0.27
+Validation accuracy: 85.50%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:21.2 (4.09/s) 
+Loss: 0.28
+|████████████████████████████████████████| 563/563 [100%] in 1:21.7 (6.89/s) 
+
+
+Validating:
+Validation loss decreased (0.265635 --> 0.263480).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 85.73%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:18.5 (4.12/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 1:20.8 (6.97/s) 
+
+
+Validating:
+Validation loss decreased (0.263480 --> 0.256083).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 85.87%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:17.9 (4.13/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 1:22.6 (6.82/s) 
+
+
+Validating:
+Validation loss decreased (0.256083 --> 0.247008).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 86.39%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:18.8 (4.12/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 1:21.5 (6.91/s) 
+
+
+Validating:
+Validation loss decreased (0.247008 --> 0.244791).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 86.38%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:18.4 (4.12/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 1:22.9 (6.79/s) 
+
+
+Validating:
+Validation loss decreased (0.244791 --> 0.241385).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 86.70%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.8 (4.14/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 1:21.5 (6.90/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.24
+Validation accuracy: 86.45%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:24.2 (4.05/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 1:20.7 (6.97/s) 
+
+
+Validating:
+Validation loss decreased (0.241385 --> 0.237456).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 86.86%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:17.6 (4.13/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 1:21.6 (6.90/s) 
+
+
+Validating:
+Validation loss decreased (0.237456 --> 0.236430).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 86.81%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.9 (4.14/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 1:21.7 (6.89/s) 
+
+
+Validating:
+Validation loss decreased (0.236430 --> 0.236153).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 86.88%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:10.0 (4.24/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 1:22.1 (6.86/s) 
+
+
+Validating:
+Validation loss decreased (0.236153 --> 0.232352).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 86.73%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.7 (4.15/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 1:21.0 (6.95/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.24
+Validation accuracy: 86.76%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.4 (4.15/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 1:22.1 (6.86/s) 
+
+
+Validating:
+EarlyStopping counter: 2 out of 3
+Validation loss: 0.24
+Validation accuracy: 86.74%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 1:22.7 (6.81/s) 
+Test loss: 0.23
+Test accuracy: 87.06%
+
+
+Hyper parameters:  {'lr': 0.01, 'conv_layers': 0, 'dropout': 0.3, 'num_encoder_layers': 4, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:17.6 (4.13/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 1:21.6 (6.90/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.303675).  Saving model ...
+Validation loss: 0.30
+Validation accuracy: 84.30%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:15.8 (4.16/s) 
+Loss: 0.30
+|████████████████████████████████████████| 563/563 [100%] in 1:21.6 (6.90/s) 
+
+
+Validating:
+Validation loss decreased (0.303675 --> 0.274751).  Saving model ...
+Validation loss: 0.27
+Validation accuracy: 85.01%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.5 (4.15/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 1:22.2 (6.85/s) 
+
+
+Validating:
+Validation loss decreased (0.274751 --> 0.267482).  Saving model ...
+Validation loss: 0.27
+Validation accuracy: 86.03%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:15.8 (4.16/s) 
+Loss: 0.28
+|████████████████████████████████████████| 563/563 [100%] in 1:23.3 (6.76/s) 
+
+
+Validating:
+Validation loss decreased (0.267482 --> 0.257846).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 85.86%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.9 (4.14/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 1:21.4 (6.92/s) 
+
+
+Validating:
+Validation loss decreased (0.257846 --> 0.247500).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 86.26%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:25.1 (4.04/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 1:22.5 (6.82/s) 
+
+
+Validating:
+Validation loss decreased (0.247500 --> 0.246268).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 86.42%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:17.5 (4.13/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 1:21.5 (6.90/s) 
+
+
+Validating:
+Validation loss decreased (0.246268 --> 0.243749).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 86.40%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:17.5 (4.13/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 1:21.8 (6.88/s) 
+
+
+Validating:
+Validation loss decreased (0.243749 --> 0.243644).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 86.37%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.3 (4.15/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 1:21.8 (6.88/s) 
+
+
+Validating:
+Validation loss decreased (0.243644 --> 0.235115).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 86.83%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:21.8 (4.08/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 1:21.9 (6.87/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.24
+Validation accuracy: 86.96%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:18.2 (4.13/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 1:21.9 (6.87/s) 
+
+
+Validating:
+EarlyStopping counter: 2 out of 3
+Validation loss: 0.24
+Validation accuracy: 86.51%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:18.2 (4.13/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 1:22.1 (6.86/s) 
+
+
+Validating:
+Validation loss decreased (0.235115 --> 0.231085).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 87.09%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.9 (4.14/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 1:22.8 (6.80/s) 
+
+
+Validating:
+Validation loss decreased (0.231085 --> 0.229023).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 87.29%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.5 (4.15/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 1:22.1 (6.86/s) 
+
+
+Validating:
+Validation loss decreased (0.229023 --> 0.226284).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 87.19%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:17.1 (4.14/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 1:21.9 (6.88/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.23
+Validation accuracy: 87.20%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 1:22.0 (6.87/s) 
+Test loss: 0.23
+Test accuracy: 86.94%
+
+
+Hyper parameters:  {'lr': 0.01, 'conv_layers': 0, 'dropout': 0.3, 'num_encoder_layers': 4, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.8 (4.14/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 1:21.9 (6.87/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.314523).  Saving model ...
+Validation loss: 0.31
+Validation accuracy: 84.04%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:18.2 (4.13/s) 
+Loss: 0.31
+|████████████████████████████████████████| 563/563 [100%] in 1:21.7 (6.89/s) 
+
+
+Validating:
+Validation loss decreased (0.314523 --> 0.279891).  Saving model ...
+Validation loss: 0.28
+Validation accuracy: 84.78%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:17.3 (4.14/s) 
+Loss: 0.29
+|████████████████████████████████████████| 563/563 [100%] in 1:22.2 (6.85/s) 
+
+
+Validating:
+Validation loss decreased (0.279891 --> 0.258878).  Saving model ...
+Validation loss: 0.26
+Validation accuracy: 85.94%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.9 (4.14/s) 
+Loss: 0.28
+|████████████████████████████████████████| 563/563 [100%] in 1:21.9 (6.87/s) 
+
+
+Validating:
+Validation loss decreased (0.258878 --> 0.252161).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 86.01%
+
+
+Epoch 5/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.9 (4.14/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 1:22.3 (6.84/s) 
+
+
+Validating:
+Validation loss decreased (0.252161 --> 0.250838).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 86.06%
+
+
+Epoch 6/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.1 (4.15/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 1:21.1 (6.94/s) 
+
+
+Validating:
+Validation loss decreased (0.250838 --> 0.244059).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 86.92%
+
+
+Epoch 7/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.7 (4.15/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 1:22.0 (6.87/s) 
+
+
+Validating:
+Validation loss decreased (0.244059 --> 0.239509).  Saving model ...
+Validation loss: 0.24
+Validation accuracy: 86.88%
+
+
+Epoch 8/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.9 (4.14/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 1:22.0 (6.86/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.24
+Validation accuracy: 87.01%
+
+
+Epoch 9/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:18.8 (4.12/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 1:21.3 (6.92/s) 
+
+
+Validating:
+EarlyStopping counter: 2 out of 3
+Validation loss: 0.24
+Validation accuracy: 86.89%
+
+
+Epoch 10/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:35.9 (3.91/s) 
+Loss: 0.26
+|████████████████████████████████████████| 563/563 [100%] in 1:21.7 (6.89/s) 
+
+
+Validating:
+Validation loss decreased (0.239509 --> 0.233813).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 86.85%
+
+
+Epoch 11/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:16.7 (4.15/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 1:22.2 (6.85/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.24
+Validation accuracy: 86.68%
+
+
+Epoch 12/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:18.8 (4.12/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 1:21.3 (6.92/s) 
+
+
+Validating:
+EarlyStopping counter: 2 out of 3
+Validation loss: 0.23
+Validation accuracy: 87.23%
+
+
+Epoch 13/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:18.0 (4.13/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 1:21.1 (6.94/s) 
+
+
+Validating:
+Validation loss decreased (0.233813 --> 0.230724).  Saving model ...
+Validation loss: 0.23
+Validation accuracy: 87.17%
+
+
+Epoch 14/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:17.5 (4.14/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 1:21.3 (6.92/s) 
+
+
+Validating:
+EarlyStopping counter: 1 out of 3
+Validation loss: 0.23
+Validation accuracy: 87.10%
+
+
+Epoch 15/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:19.6 (4.11/s) 
+Loss: 0.25
+|████████████████████████████████████████| 563/563 [100%] in 1:22.3 (6.84/s) 
+
+
+Validating:
+EarlyStopping counter: 2 out of 3
+Validation loss: 0.24
+Validation accuracy: 86.72%
+
+
+
+
+Testing:
+|████████████████████████████████████████| 563/563 [100%] in 1:22.2 (6.85/s) 
+Test loss: 0.23
+Test accuracy: 87.03%
+
+
+Hyper parameters:  {'lr': 0.01, 'conv_layers': 0, 'dropout': 0.3, 'num_encoder_layers': 4, 'fashion_mnist': False, 'embed_dim': 128, 'num_heads': 4}
+Epoch 1/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:17.1 (4.14/s) 
+Loss: 0.39
+|████████████████████████████████████████| 563/563 [100%] in 1:22.2 (6.85/s) 
+
+
+Validating:
+Validation loss decreased (inf --> 0.299894).  Saving model ...
+Validation loss: 0.30
+Validation accuracy: 84.30%
+
+
+Epoch 2/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:17.7 (4.13/s) 
+Loss: 0.30
+|████████████████████████████████████████| 563/563 [100%] in 1:22.0 (6.86/s) 
+
+
+Validating:
+Validation loss decreased (0.299894 --> 0.278986).  Saving model ...
+Validation loss: 0.28
+Validation accuracy: 85.29%
+
+
+Epoch 3/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:18.5 (4.12/s) 
+Loss: 0.28
+|████████████████████████████████████████| 563/563 [100%] in 1:21.1 (6.95/s) 
+
+
+Validating:
+Validation loss decreased (0.278986 --> 0.254474).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 86.23%
+
+
+Epoch 4/15
+|████████████████████████████████████████| 1313/1313 [100%] in 5:18.0 (4.13/s) 
+Loss: 0.27
+|████████████████████████████████████████| 563/563 [100%] in 1:22.5 (6.82/s) 
+
+
+Validating:
+Validation loss decreased (0.254474 --> 0.250804).  Saving model ...
+Validation loss: 0.25
+Validation accuracy: 86.44%
+
+
+Epoch 5/15
+slurmstepd: error: *** JOB 24623521 ON pg-gpu37 CANCELLED AT 2022-06-22T09:45:17 DUE TO TIME LIMIT ***
+
+
+###############################################################################
+Peregrine Cluster
+Job 24623521 for user 's3894479'
+Finished at: Wed Jun 22 09:45:19 CEST 2022
+
+Job details:
+============
+
+Job ID              : 24623521
+Name                : UnifiedTransformer-mnist_non-conv_128_4
+User                : s3894479
+Partition           : gpu
+Nodes               : pg-gpu37
+Number of Nodes     : 1
+Cores               : 12
+Number of Tasks     : 1
+State               : CANCELLED,TIMEOUT
+Submit              : 2022-06-14T08:39:51
+Start               : 2022-06-19T09:45:01
+End                 : 2022-06-22T09:45:18
+Reserved walltime   : 3-00:00:00
+Used walltime       : 3-00:00:17
+Used CPU time       : 2-17:25:49 (efficiency:  7.57%)
+% User (Computation): 99.81%
+% System (I/O)      :  0.19%
+Mem reserved        : 64G
+Max Mem (Node/step) : 2.38G (pg-gpu37, per node)
+Full Max Mem usage  : 2.38G
+Total Disk Read     : 6.41M
+Total Disk Write    : 51.51K
+Average GPU usage   : 18.4% (pg-gpu37)
+
+
+Acknowledgements:
+=================
+
+Please see this page for information about acknowledging Peregrine in your publications:
+
+https://wiki.hpc.rug.nl/peregrine/introduction/scientific_output
+
+################################################################################

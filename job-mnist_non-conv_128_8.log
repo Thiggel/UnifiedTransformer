@@ -1,0 +1,45 @@
+slurmstepd: error: execve(): /var/spool/slurmd/job24623522/slurm_script: No such file or directory
+slurmstepd: error: acct_gather_profile/influxdb _send_data: curl_easy_perform failed to send data (discarded). Reason: Failure when receiving data from the peer
+
+
+###############################################################################
+Peregrine Cluster
+Job 24623522 for user 's3894479'
+Finished at: Sun Jun 19 21:09:23 CEST 2022
+
+Job details:
+============
+
+Job ID              : 24623522
+Name                : UnifiedTransformer-mnist_non-conv_128_8
+User                : s3894479
+Partition           : gpu
+Nodes               : pg-gpu11
+Number of Nodes     : 1
+Cores               : 12
+Number of Tasks     : 1
+State               : CANCELLED by 0,CANCELLED
+Submit              : 2022-06-14T08:39:51
+Start               : 2022-06-19T15:22:26
+End                 : 2022-06-19T19:30:02
+Reserved walltime   : 3-00:00:00
+Used walltime       :   04:07:36
+Used CPU time       : --
+% User (Computation): --
+% System (I/O)      : --
+Mem reserved        : 64G
+Max Mem (Node/step) : 0.00  (Node unknown, N/A)
+Full Max Mem usage  : 0.00 
+Total Disk Read     : 0.00 
+Total Disk Write    : 0.00 
+Average GPU usage   : 0.0% (pg-gpu11)
+
+
+Acknowledgements:
+=================
+
+Please see this page for information about acknowledging Peregrine in your publications:
+
+https://wiki.hpc.rug.nl/peregrine/introduction/scientific_output
+
+################################################################################
